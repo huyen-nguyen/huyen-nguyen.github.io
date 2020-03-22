@@ -1,0 +1,149 @@
+/*!
+ * Start Bootstrap - Heroic Features (https://startbootstrap.com/template-overviews/heroic-features)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.64;
+}
+
+.non-deco{
+  text-decoration: none;
+  color: inherit;
+}
+
+a {
+  color: #0065c7;
+}
+
+b {
+  font-weight: 700;
+}
+
+th {
+  font-weight: normal;
+  vertical-align: top;
+}
+
+/* ---  footer  ---*/
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* ---------------------- quote card ----------------------*/
+.quote-card {
+  font-family: 'Source Serif Pro', serif;
+  background: #fafbfc;
+  color: #222222;
+  padding: 20px;
+  padding-left: 50px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(34, 34, 34, 0.12);
+  position: relative;
+  overflow: hidden;
+  min-height: 120px;
+}
+.quote-card p {
+  font-size: 19px;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 80%;
+}
+.quote-card cite {
+  font-size: 16px;
+  margin-top: 10px;
+  display: block;
+  font-weight: 200;
+  opacity: 0.8;
+}
+.quote-card:before {
+  font-family: Georgia, serif;
+  content: "“";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 5em;
+  color: rgba(235, 235, 235, 0.8);
+  font-weight: normal;
+}
+.quote-card:after {
+  font-family: Georgia, serif;
+  content: "”";
+  position: absolute;
+  bottom: -110px;
+  line-height: 100px;
+  right: -32px;
+  font-size: 25em;
+  color: rgba(235, 235, 235, 0.8);
+  font-weight: normal;
+}
+@media (max-width: 640px) {
+  .quote-card:after {
+    font-size: 22em;
+    right: -25px;
+  }
+}
+
+/* ---------------------- active class ----------------------*/
+
+.active {
+  list-style-position: inside;
+  border-bottom: 2px solid black;
+}
+
+/* ---------------------- color and font ----------------------*/
+.red {
+  color: #990020;
+}
+
+.selfCol {
+  left: 8%;
+}
+@media (max-width: 998px) {
+  .me {
+    width: 160px;
+  }
+  .selfCol {
+    left: unset;
+  }
+}
+
+/* --------------- publications --------------- */
+
+.th-image {
+  padding-top: 8px;
+  padding-right: 10px;
+}
+
+.paperImage {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.paperImage:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.paperDetail {
+  line-height: 1.8;
+}
+
+.paperDetail a {
+  margin-right: 1rem;
+}
+
+.paperTitle {
+  font-size: 1.3rem;
+
+}
+.paperDetail .venue {
+  color: #7191af;
+}

@@ -1,504 +1,134 @@
 <!DOCTYPE html>
-<html>
-<link rel="shortcut icon" href="images/personal/lab.png">
-<!--<link rel="shortcut icon" href="images/HN.png">-->
-<title>Huyen Nguyen | Data Visualization | Visual Analytics | Machine Learning | Computer Vision</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description"
-      content="data visualization, machine learning, data analytics, computer vision, huyen nguyen, huyen n. nguyen, idvl, interactive data visualization, texas tech university, ttu, cs, computer science, raider">
-<meta name="keywords"
-      content="data visualization, data analytics, computer vision, machine learning, wordstream, text visualization, malViz, Tensorflow, LSTM, D3js, Threejs, Malviz, Malware visualization, malware tracing, digital forensics, biological network, topic modeling, analysis of algorithms, complex network, huyen nguyen, huyen n. nguyen, idvl, interactive data visualization, texas tech university, ttu, cs, computer science, raider">
+<html lang="en">
 
-<meta name="author"
-      content="Huyen Nguyen, Huyen Ngoc Nguyen, Huyen N. Nguyen, Texas Tech University, huyen.nguyen[at]ttu.edu">
-<meta http-equiv="Cache-control" content="public">
+<head>
 
-<meta name="robots"
-      content="data visualization, data analytics, computer vision, machine learning, wordstream, text visualization, malViz, Tensorflow, LSTM, D3js, Threejs, Malviz, Malware visualization, malware tracing, digital forensics, biological network, topic modeling, analysis of algorithms, complex network, huyen nguyen, huyen n. nguyen, idvl, interactive data visualization, texas tech university, ttu, cs, computer science, raider"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="images/Drawing.png"/>
+  <link href="https://fonts.googleapis.com/css?family=Volkhov|Source+Serif+Pro|Source+Sans+Pro:400,700,900&display=swap"
+        rel="stylesheet">
 
-<meta name="googlebot"
-      content="data visualization, data analytics, computer vision, machine learning, wordstream, text visualization, malViz, Tensorflow, LSTM, D3js, Threejs, Malviz, Malware visualization, malware tracing, digital forensics, biological network, topic modeling, analysis of algorithms, complex network, huyen nguyen, huyen n. nguyen, idvl, interactive data visualization, texas tech university, ttu, cs, computer science, raider"/>
+  <title>Huyen Nguyen</title>
 
-<!-- Used for verifying ownership of a site. -->
-<meta name="verify"
-      content="data visualization, data analytics, computer vision, machine learning, wordstream, text visualization, malViz, Tensorflow, LSTM, D3js, Threejs, Malviz, Malware visualization, malware tracing, digital forensics, biological network, topic modeling, analysis of algorithms, complex network, huyen nguyen, huyen n. nguyen, idvl, interactive data visualization, texas tech university, ttu, cs, computer science, raider"/>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Open Graph Meta Tags -->
-<!-- Set the canonical URL for the page you are sharing. -->
-<meta property="og:url" content="http://myweb.ttu.edu/huyenngu/">
-<!-- The title to accompany the URL. -->
-<meta property="og:title"
-      content="Huyen Nguyen | Data Visualization, Data Analytics, Computer Vision, Machine Learning"/>
-<!-- Provides Facebook the name that you would like your website to be recognized by. -->
-<meta property="og:site_name" content="http://myweb.ttu.edu/huyenngu/">
-<!-- Provides Facebook the type of website that you would like your website to be categorized by. -->
-<meta property="og:type" content="website">
-<!-- Defines the language, American English is the default. -->
-<meta property="og:locale" content="en-US">
-<!-- Directs Facebook to use the specified image when the page is shared. -->
-<meta property="og:image" content="http://myweb.ttu.edu/huyenngu/assets/images/Huyen_profile.png">
-<!-- Similar to the meta description tag in HTML. This description is shown below the link title on Facebook. -->
-<meta property="og:description"
-      content="data visualization, machine learning, data analytics, computer vision, huyen nguyen, huyen n. nguyen, idvl, interactive data visualization, texas tech university, ttu, cs, computer science, raider"/>
-<!-- End meta tag -->
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Custom styles for this template -->
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela Round">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
-<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
-      integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+<body>
+<div id="nav-placeholder"></div>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="styles.css">
-<body class="w3-sand" style="background-color: rgba(221,218,199,0.56)!important">
-
-<!-- w3-content defines a container for fixed size centered content,
-and is wrapped around the whole page content, except for the footer in this example -->
-<div class="w3-content" style="max-width:2000px;">
-<!--    <div class="w3-bar w3-white wrapper ">-->
-<!--        <div style="float: left" class="w3-padding">H u y e n &nbsp;&nbsp;N g u y e n</div>-->
-<!--        <div style="float: right" >-->
-<!--            <a href="https://www.linkedin.com/in/nnhuyen/" class="w3-bar-item w3-button"><i-->
-<!--                    class="fa fa-linkedin"></i></a>-->
-<!--            <a href="https://www.researchgate.net/profile/Huyen_Nguyen140" class="w3-bar-item w3-button"><i class="ai ai-researchgate-square"></i></a>-->
-<!--            <a href="https://scholar.google.com/citations?user=tsrO-ZgAAAAJ" class="w3-bar-item w3-button"><i class="ai ai-google-scholar-square"></i></a>-->
-<!--            <a href="https://twitter.com/huyendoesstuff" class="w3-bar-item w3-button"><i-->
-<!--                    class="fa fa-twitter"></i>-->
-<!--                </a>-->
-<!--            <a href="https://github.com/nnhuyen" class="w3-bar-item w3-button">-->
-<!--                <i class="fab fa-github"></i>-->
-<!--                </a>-->
-
-<!--        </div>-->
-<!--    </div>-->
-    <header class="header"></header>
-    <!-- Header -->
-    <header class="w3-padding-24 w3-white">
-
-        <div class="w3-container w3-padding">
-            <div class="w3-container w3-quarter">
-                <img class="imgMain w3-hide-small" src="images/personal/Huyen_avatar.png" alt="Huyen Nguyen"
-                     height="160" width="160"/>
-            </div>
-            <div class="w3-container w3-threequarter">
-                <h1>Huyen Nguyen</h1>
-                <h5>Ph.D. Student in Computer Science</h5>
-                <h5>Texas Tech University</h5>
-                <h5>Email: huyen.nguyen@ttu.edu</h5>
-                <a href="https://www.linkedin.com/in/huyen-n-nguyen/" class="w3-bar-item w3-button"><i
-                        class="fa fa-linkedin"></i></a>
-                <a href="https://www.researchgate.net/profile/Huyen_Nguyen140" class="w3-bar-item w3-button"><i class="ai ai-researchgate-square"></i></a>
-                <a href="https://scholar.google.com/citations?user=tsrO-ZgAAAAJ" class="w3-bar-item w3-button"><i class="ai ai-google-scholar-square"></i></a>
-                <a href="https://twitter.com/huyendoesstuff" class="w3-bar-item w3-button"><i
-                        class="fa fa-twitter"></i>
-                </a>
-                <a href="https://github.com/huyen-nguyen" class="w3-bar-item w3-button">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-
-        </div>
-    </header>
-    <div class="w3-row w3-padding">
-
-        <!-- Blog entries -->
-        <div class="w3-col l8 s12">
-
-            <!-- Blog entry -->
-            <div class="w3-container w3-white w3-margin w3-padding-large">
-                <div class="w3-padding">
-                    <h3>Publications</h3>
-<!--                    <h5>Title description, <span class="w3-opacity">May 2, 2016</span></h5>-->
-                </div>
-
-                <div class="row w3-padding">
-                    <div class="col-2"><img class="img-thumbnail" src="images/papers/astm-ssms.png"></div>
-                    <div class="col-10 pub">
-                        <h5>Visualization and Explainable Machine Learning for Efficient Manufacturing and System
-                            Operations</h5>
-                        <p>Dy D. Le, Vung Pham, Huyen N. Nguyen and Tommy Dang</p>
-                        <p><a href="https://www.astm.org/DIGITAL_LIBRARY/JOURNALS/SSMS/PAGES/SSMS20190029.htm"
-                              class="venue">Journal of Smart and Sustainable Manufacturing Systems</a></p>
-                        <p>Volume 3, Issue 2 &nbsp; <b>ISSN:</b> 2520-6478 &nbsp; <b>DOI</b>: 10.1520/SSMS20190029</p>
-                        <ul class="icon-list">
-                            <li><a href="https://www.astm.org/DIGITAL_LIBRARY/JOURNALS/SSMS/PAGES/SSMS20190029.htm" target="_blank"
-                            ><i class="fas fa-globe"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <hr>
-                <div class="row w3-padding">
-                    <div class="col-2"><img class="img-thumbnail" src="images/papers/wsh.png"></div>
-                    <div class="col-10 pub">
-                        <h5>WordStream: Interactive Visualization for Topic Evolution</h5>
-                        <p>Tommy Dang, Huyen N. Nguyen and Vung Pham</p>
-                        <p><a href="https://diglib.eg.org/handle/10.2312/evs20191178"
-                              class="venue">EuroVis - 21st EG/VGTC Conference on Visualization</a></p>
-                        <p><b>DOI</b>: 10.2312/evs20191178</p>
-                        <ul class="icon-list">
-                            <li><a href="BibTex/wordstream.html" target="_blank"><i
-                                    class="fas fa-quote-right"></i></a></li>
-                            <li><a href="publications/EuroVis19_WordStream.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a></li>
-                            <li><a href="https://diglib.eg.org/handle/10.2312/evs20191178" target="_blank"
-                            ><i class="fas fa-globe"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-            <hr>
-            <!-- Blog entry -->
-            <div class="w3-container w3-white w3-margin w3-padding-large">
-                <div class="w3-padding">
-                    <h3>Work experience</h3>
-<!--                    <h5>Title description, <span class="w3-opacity">April 23, 2016</span></h5>-->
-                </div>
-
-                <div class="w3-padding">
-                    <div class="content">
-                        <div class="item">
-                            <h4 class="title">Research Assistant</h4>
-                                <h5>
-                                <span
-                                    class="place"><a href="http://www.myweb.ttu.edu/tnhondan/iDVL/index.php#">Interactive Data Visualization Lab, Texas Tech University</a></span>
-                                <span
-                                        class="year">(2018 - Present)</span>
-                                </h5>
-                            <p>My main research area is data visualization, with
-                                applications in topic evolution, text
-                                visualization and malware tracking. I create visualizations with <a
-                                        href="https://d3js.org/">D3.js
-                                    library</a>, in which the data can come from various domains.
-                            </p>
-                        </div><!--//item-->
-                        <hr>
-                        <div class="item">
-                            <h4 class="title">Research Student </h4>
-                            <h5>
-                            <span
-                                    class="place"><a href="http://ds.soict.hust.edu.vn/">Data Science Lab, Hanoi University of Science and Technology</a></span>
-                                <span class="year">(2015 - 2018)</span></h5>
-                            <p>The research topics that I found most interested in are computer vision and
-                                machine learning. I have implemented models for object recognition and
-                                object
-                                detection with Convolutional Neural Networks.</p>
-                        </div><!--//item-->
-                        <hr>
-                        <div class="item">
-                            <h4 class="title">Internship </h4>
-                            <h5>
-                            <span class="place"><a href="https://vccorp.vn/">Vietnam
-                                    Communications Corporation - VC Corp</a></span>
-                                <span
-                                        class="year">(2015)</span></h5>
-                            <p>Processed big data with frameworks and tools such as Hadoop, Apache
-                                Spark, MapReduce and Maven
-                                project.</p>
-                        </div><!--//item-->
-
-                    </div><!--//content-->
-                </div>
-            </div>
-
-            <!-- Blog entry -->
-<!--            <div class="w3-container w3-white w3-margin w3-padding-large">-->
-<!--                <div class="w3-center">-->
-<!--                    <h3>TITLE HEADING</h3>-->
-<!--                    <h5>Title description, <span class="w3-opacity">April 7, 2016</span></h5>-->
-<!--                </div>-->
-
-<!--                <div class="w3-justify">-->
-<!--                    <p><strong>Dont miss!</strong> The runway in New York City this weekend is gonna be legendary!</p>-->
-<!--                    <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae,-->
-<!--                        convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim,-->
-<!--                        ac accumsan tortor cursus at. Phasellus sed ultricies-->
-<!--                        mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum,-->
-<!--                        porta lectus vitae, ultricies congue gravida diam non fringilla.</p>-->
-<!--                    <p class="w3-left">-->
-<!--                        <button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i-->
-<!--                                class="fa fa-thumbs-up"></i> Like</b></button>-->
-<!--                    </p>-->
-<!--                    <p class="w3-right">-->
-<!--                        <button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span-->
-<!--                                class="w3-tag w3-white">3</span></button>-->
-<!--                    </p>-->
-<!--                    <p class="w3-clear"></p>-->
-
-<!--                    &lt;!&ndash; Example of comment field &ndash;&gt;-->
-<!--                    <div id="demo3" style="display:none">-->
-<!--                        <hr>-->
-<!--                        <div class="w3-row w3-margin-bottom">-->
-<!--                            <div class="w3-col l2 m3">-->
-<!--                            </div>-->
-<!--                            <div class="w3-col l10 m9">-->
-<!--                                <h4>Jane <span class="w3-opacity w3-medium">April 10, 2015, 7:22 PM</span></h4>-->
-<!--                                <p>That was a great runway show! Thanks for everything.</p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="w3-row w3-margin-bottom">-->
-<!--                            <div class="w3-col l2 m3">-->
-<!--                            </div>-->
-<!--                            <div class="w3-col l10 m9">-->
-<!--                                <h4>John <span class="w3-opacity w3-medium">April 8, 2015, 10:32 PM</span></h4>-->
-<!--                                <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet,-->
-<!--                                    consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="w3-row w3-margin-bottom">-->
-<!--                            <div class="w3-col l2 m3">-->
-<!--                            </div>-->
-<!--                            <div class="w3-col l10 m9">-->
-<!--                                <h4>Anja <span class="w3-opacity w3-medium">April 7, 2015, 9:12 PM</span></h4>-->
-<!--                                <p>Cant wait for the runway to start!</p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-
-            <!-- END BLOG ENTRIES -->
-        </div>
-
-        <!-- About/Information menu -->
-        <div class="w3-col l4">
-            <!-- About Card -->
-            <div class="w3-white w3-margin">
-                <div class="w3-container w3-padding w3-black">
-                    <h4 class="onBlack">About me</h4>
-                    <p>I'm in my second year as a Ph.D. student,
-                        loving data visualization and visual analytics.<br>
-                        Living in <span class="onBlack"><a href="https://www.ttu.edu/" target="_blank" class="onBlack"
-                                                           title="Texas Tech Red Raider!">#RaiderLand</a></span>!
-                    </p>
-                </div>
-            </div>
-            <hr>
-            <!-- Posts -->
-            <div class="w3-white w3-margin">
-                <div class="w3-container w3-padding w3-black">
-                    <h4 class="onBlack">Research Interests</h4>
-                </div>
-                <ul class="w3-ul w3-hoverable w3-white">
-                    <li class="w3-padding-16">
-<!--                        <img src="/w3images/avatar_smoke.jpg" alt="Image" class="w3-left w3-margin-right"-->
-<!--                             style="width:50px">-->
-                        <span class="w3-large">Data Visualization</span>
-                        <br>
-<!--                        <span>Sed mattis nunc</span>-->
-                    </li>
-                    <li class="w3-padding-16">
-<!--                        <img src="/w3images/bandmember.jpg" alt="Image" class="w3-left w3-margin-right"-->
-<!--                             style="width:50px">-->
-                        <span class="w3-large">Visual Analytics</span>
-                        <br>
-<!--                        <span>Praes tinci sed</span>-->
-                    </li>
-                    <li class="w3-padding-16">
-<!--                        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right"-->
-<!--                             style="width:50px">-->
-                        <span class="w3-large">Computer Vision</span>
-                        <br>
-<!--                        <span>Ultricies congue</span>-->
-                    </li>
-                    <li class="w3-padding-16">
-<!--                        <img src="/w3images/avatar_smoke.jpg" alt="Image" class="w3-left w3-margin-right w3-sepia"-->
-<!--                             style="width:50px">-->
-                        <span class="w3-large"><a href="https://www.researchgate.net/profile/Huyen_Nguyen140">More on
-                            Research Gate <i class="fa fa-external-link"></i></a></span>
-                        <br>
-<!--                        <span>Lorem ipsum dipsum</span>-->
-                    </li>
-                </ul>
-            </div>
-            <hr>
-            <div class="w3-white w3-margin">
-                <div class="w3-container w3-padding w3-black">
-                    <h4 class="onBlack">Awards</h4>
-                </div>
-                <ul class="w3-ul w3-hoverable w3-white">
-                    <li class="w3-padding-16">
-                        <!--                        <img src="/w3images/avatar_smoke.jpg" alt="Image" class="w3-left w3-margin-right"-->
-                        <!--                             style="width:50px">-->
-                        <span class="w3-large">Visionary Grant at Gordon Research Conference</span>
-                        <br> <span>The conference hosts a Visionary Grant competition, supported by a generous grant from NASA, to provide “seed funding” to multidisciplinary research teams.</span>
-                        <a href="https://ceps.unh.edu/chemistry/dr-kathleen-jeffery-team-win-visionary-grant-gordon-research-conference"><i class="fa fa-external-link"></i></a></span>
-                        <br>
-                     
-                          </li>
-                </ul>
-            </div>
-            <hr>
-            <div class="w3-white w3-margin">
-                <div class="w3-container w3-padding w3-black">
-                    <h4 class="onBlack">Activties</h4>
-                </div>
-                <ul class="w3-ul w3-hoverable w3-white">
-                    <li class="w3-padding-16">
-                        <!--                        <img src="/w3images/avatar_smoke.jpg" alt="Image" class="w3-left w3-margin-right"-->
-                        <!--                             style="width:50px">-->
-                        <span class="w3-large">Gordon Research Conference
-                            <a href="https://www.grc.org/visualization-in-science-and-education-conference/2019/"><i class="fa fa-external-link"></i></a></span>
-                        <br>
-                                                <span>Poster presenter</span>
-                    </li>
-                    <li class="w3-padding-16">
-                        <!--                        <img src="/w3images/bandmember.jpg" alt="Image" class="w3-left w3-margin-right"-->
-                        <!--                             style="width:50px">-->
-                        <span class="w3-large">Open House Event</span>
-                        <br>
-                                                <span>Department of Computer Science, Texas Tech</span>
-                    </li>
-
-                </ul>
-            </div>
-<!--            &lt;!&ndash; Advertising &ndash;&gt;-->
-<!--            <div class="w3-white w3-margin">-->
-<!--                <div class="w3-container w3-padding w3-black">-->
-<!--                    <h4 class="onBlack">Advertise</h4>-->
-<!--                </div>-->
-<!--                <div class="w3-container w3-white">-->
-<!--                    <div class="w3-container w3-display-container w3-light-grey w3-section" style="height:200px">-->
-<!--                        <span class="w3-display-middle">Your AD Here</span>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <hr>-->
-
-<!--            &lt;!&ndash; Tags &ndash;&gt;-->
-<!--            <div class="w3-white w3-margin">-->
-<!--                <div class="w3-container w3-padding w3-black">-->
-<!--                    <h4 class="onBlack">Tags</h4>-->
-<!--                </div>-->
-<!--                <div class="w3-container w3-white">-->
-<!--                    <p>-->
-<!--                        <span class="w3-tag w3-black w3-margin-bottom">Fashion</span> <span-->
-<!--                            class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span-->
-<!--                            class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>-->
-<!--                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Hats</span> <span-->
-<!--                            class="w3-tag w3-light-grey w3-small w3-margin-bottom">Norway</span> <span-->
-<!--                            class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sweaters</span>-->
-<!--                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span-->
-<!--                            class="w3-tag w3-light-grey w3-small w3-margin-bottom">Deals</span> <span-->
-<!--                            class="w3-tag w3-light-grey w3-small w3-margin-bottom">Accessories</span>-->
-<!--                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span-->
-<!--                            class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span-->
-<!--                            class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>-->
-<!--                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Jeans</span> <span-->
-<!--                            class="w3-tag w3-light-grey w3-small w3-margin-bottom">Trends</span>-->
-<!--                    </p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <hr>-->
-
-<!--            &lt;!&ndash; Inspiration &ndash;&gt;-->
-<!--            <div class="w3-white w3-margin">-->
-<!--                <div class="w3-container w3-padding w3-black">-->
-<!--                    <h4>Inspiration</h4>-->
-<!--                </div>-->
-<!--                <div class="w3-row-padding w3-white">-->
-<!--                    <div class="w3-col s6">-->
-<!--                        <p><img src="/w3images/jeans.jpg" alt="Jeans" style="width:100%"></p>-->
-<!--                        <p><img src="/w3images/team1.jpg" alt="Jeans" style="width:100%"></p>-->
-<!--                    </div>-->
-<!--                    <div class="w3-col s6">-->
-<!--                        <p><img src="/w3images/avatar_hat.jpg" alt="Men in Hats" style="width:100%"-->
-<!--                                class="w3-grayscale"></p>-->
-<!--                        <p><img src="/w3images/team4.jpg" alt="Jeans" style="width:100%"></p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <hr>-->
-
-<!--            <div class="w3-white w3-margin">-->
-<!--                <div class="w3-container w3-padding w3-black">-->
-<!--                    <h4>Follow Me</h4>-->
-<!--                </div>-->
-<!--                <div class="w3-container w3-xlarge w3-padding">-->
-<!--                    <i class="fa fa-facebook-official w3-hover-opacity"></i>-->
-<!--                    <i class="fa fa-instagram w3-hover-opacity"></i>-->
-<!--                    <i class="fa fa-snapchat w3-hover-opacity"></i>-->
-<!--                    <i class="fa fa-pinterest-p w3-hover-opacity"></i>-->
-<!--                    <i class="fa fa-twitter w3-hover-opacity"></i>-->
-<!--                    <i class="fa fa-linkedin w3-hover-opacity"></i>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <hr>-->
-
-<!--            &lt;!&ndash; Subscribe &ndash;&gt;-->
-<!--            <div class="w3-white w3-margin">-->
-<!--                <div class="w3-container w3-padding w3-black">-->
-<!--                    <h4>Subscribe</h4>-->
-<!--                </div>-->
-<!--                <div class="w3-container w3-white">-->
-<!--                    <p>Enter your e-mail below and get notified on the latest blog posts.</p>-->
-<!--                    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>-->
-<!--                    <p>-->
-<!--                        <button type="button" onclick="document.getElementById('subscribe').style.display='block'"-->
-<!--                                class="w3-button w3-block w3-red">Subscribe-->
-<!--                        </button>-->
-<!--                    </p>-->
-<!--                </div>-->
-<!--            </div>-->
-
-<!--            &lt;!&ndash; END About/Intro Menu &ndash;&gt;-->
-<!--        </div>-->
-
-        <!-- END GRID -->
-    </div>
-
-    <!-- END w3-content -->
-</div>
-
-<!-- Subscribe Modal -->
-<div id="subscribe" class="w3-modal w3-animate-opacity">
-    <div class="w3-modal-content" style="padding:32px">
-        <div class="w3-container w3-white">
-            <i onclick="document.getElementById('subscribe').style.display='none'"
-               class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
-            <h2 class="w3-wide">SUBSCRIBE</h2>
-            <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
-            <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
-            <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom"
-                    onclick="document.getElementById('subscribe').style.display='none'">Subscribe
-            </button>
-        </div>
-    </div>
-</div>
-</div>
-<!-- Footer -->
-<footer class="w3-container w3-dark-grey" style="padding:32px">
-    <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i
-            class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-    <p>Copyright © 2019 All rights reserved.</p>
-</footer>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/selection.js"></script>
 
 <script>
-    // Toggle between hiding and showing blog replies/comments
-    document.getElementById("myBtn").click();
+  $("#nav-placeholder").load("navigation.html");
 
-    function myFunction(id) {
-        var x = document.getElementById(id);
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-        } else {
-            x.className = x.className.replace(" w3-show", "");
-        }
-    }
+  setTimeout(function(){
+    $("#homeBtn").addClass("active");
+    f();
+  }, 100);
 
-    function likeFunction(x) {
-        x.style.fontWeight = "bold";
-        x.innerHTML = "✓ Liked";
-    }
+</script>
+
+ <!-- Page Content -->
+  <div class="container">
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron pl-0 pr-0 pb-2 bg-white my-4">
+      <h2 class="display-4 pb-3">Hi, I'm Huyen Nguyen ☃</h2>
+
+      <div class="row">
+        <div class="col-lg-10 pr-5">
+          <p class="lead">I'm a PhD student in Computer Science at <a href="https://www.ttu.edu/" target="_blank">Texas Tech
+            University</a>, doing research
+            in interactive data visualization and visual analytics. I'm a member of the <a
+                    href="https://idatavisualizationlab.github.io/" target="_blank">interactive Data Visualization Lab
+              (iDVL)</a>, where I work with <a href="http://www.myweb.ttu.edu/tnhondan/" target="_blank">Dr. Tommy
+              Dang</a>.
+          </p>
+          <p class="lead">I work on visualization methods and applications that support visual analytics
+            and data analysis from large scale data, including quantitative and qualitative data.
+<!--            Before this, I-->
+<!--            completed my final thesis for Bachelor's Degree on multi-label image classification and object detection.-->
+          </p>
+
+        </div>
+        <div class="col-lg-2" style="text-align: center;">
+          <img class="rounded img-fluid me" src="images/Huyen.JPG" alt="Huyen Nguyen">
+          <div class="pt-2" style="word-wrap: break-word"><a href="mailto:huyen.nguyen@ttu.edu">huyen.nguyen@ttu.edu</a></div>
+        </div>
+      </div>
+    </header>
+    <blockquote class="quote-card bg-light">
+      <p>
+        Data Visualization provides us with a way to display the avalanche of data in meaningful
+          ways that clearly present insights hidden within the mass amount of information.
+      </p>
+
+      <cite>
+        According to <a href="http://www.iotdataviz.com/" class="a">IoTDataViz.com</a>
+      </cite>
+    </blockquote>
+
+    <!-- Page Features -->
+    <div class="row pt-lg-5">
+      <div class="col-lg-9">
+        <h2>Featured publications</h2>
+        <hr>
+        <div id="featuredPaperContainer"></div>
+
+      </div>
+
+      <div class="col-lg-3 pt-lg-2">
+        <h4>News</h4>
+        <hr>
+        <h5 class="red">Visionary Grant at Gordon Research Conference</h5>
+        <p>"Visualizing Qualitative Data for Science and
+          Education" received the <i><a class="non-deco"
+                                        href="https://ceps.unh.edu/chemistry/dr-kathleen-jeffery-team-win-visionary-grant-gordon-research-conference">Visionary Grant Award <i class="fas fa-external-link-alt fa-fw"></i></a></i>, supported by a generous grant from NASA for
+            interdisciplinary
+          research.</p>
+        <hr>
+        <h5 class="red">Scientific Computing meets Machine Learning and Life Sciences
+          Workshop Poster</h5>
+        <p>The poster is about Interactive Visualization for Earthquake Analysis from Social Media Data, presented in
+          the <i><a class="non-deco" href="http://www.math.ttu.edu/scmlls2019/">workshop held at TTU <i
+                  class="fas fa-external-link-alt fa-fw"></i></a></i>.</p>
+        <hr>
+        <h5 class="red">Visualization in Science and Education - Gordon Research Conference Poster</h5>
+        <p>This year, the conference is <i><a class="non-deco" href="https://www.grc.org/visualization-in-science-and-education-conference/2019/">Educating Skillful Visualizers <i
+                class="fas fa-external-link-alt fa-fw"></i></a></i>. The poster is about Interactive Visualization
+          for Topic Evolution, applied on educational domain.</p>
+        <hr>
+      </div>
+
+
+    </div>
+
+
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+<div id="footer-placeholder"></div>
+<script>$("#footer-placeholder").load("footer.html");</script>
+<script src="js/publication.js"></script>
+<script>
+  featuredPublications();
 </script>
 
 </body>
+
 </html>
