@@ -1,7 +1,7 @@
 function listPapers(mainContain, featured) {
     var publicationArea = mainContain.selectAll('div.pubYear').selectAll('div.publicationArea').data(d => d.values)
         .enter().append('div').attr('class', 'publicationArea')
-        .append('table').style('width', '100%').style('margin-left', () => (featured)? '0px' :'20px')
+        .append('table').style('width', '100%').style('margin-left', () => (featured) ? '0px' : '20px')
         .append('tr');
     publicationArea.append('th').attr("class", "th-image").attr('width', '15%')
         .append("a")
@@ -9,35 +9,34 @@ function listPapers(mainContain, featured) {
         .append('img').attr("class", "paperImage")
         .attr('src', d => d.image).attr('width', 190).attr('height', 110);
 
-    publicationArea.append('th').attr("class", "paperDetail").attr('width', '85%')
+    publicationArea.append('th').attr("class","paperDetail").attr('width', '85%')
         .html(d => `
                         <a class="paperTitle non-deco" href="${d.pdf}">${d.Title}</a><br>
                         ${highlightH(arraytoAuthor(d.Authors))} <br>
                         <span class="venue">${d.Venue}</span> <br>
                         ${d.pdf !== '' ? `<a href="${d.pdf}"><i class="far fa-file-pdf" aria-hidden="true"></i> PDF</a>` : ''}
-                        ${d.video !== '' ? `<a href="${d.video}"><i class="fas fa-video" aria-hidden="true"></i> Video</a>` : ''}
-                        ${d.github !== '' ? `<a href="${d.github}"><i class="fab fa-github"></i> GitHub</a>` : ''}
-                          
-                        ${d.doi !== '' ? `<a href="${d.doi}" class="button">DOI</a>` : ''}
+                        ${d.doi !== '' ? `<a href="${d.doi}"><i class="fas fa-link" aria-hidden="true"></i> DOI</a>` : ''}
+                        ${d.video !== '' ? `<a href="${d.video}"><i class="fas fa-film" aria-hidden="true"></i></i> Video</a>` : ''}
+                        ${d.github !== '' ? `<a href="${d.github}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>` : ''}
+                        ${d.Demo !== '' ? `<a href="${d.Demo}"><i class="far fa-play-circle" aria-hidden="true"></i> Demo</a>` : ''}
+                        ${d.Example !== '' ? `<a href="${d.Example}"><i class="fas fa-th" aria-hidden="true"></i> Examples</a>` : ''}
                         ${d.bib !== '' ? `<a href="${d.bib}"> <i class="fas fa-book" aria-hidden="true"></i> BibTex</a>
                         <br><br>` : ''}`);
+
     function arraytoAuthor(a) {
         var lasta = a.pop();
-        console.log(a, lasta)
         if (a.length) {
             return a.join(', ') + ' and ' + lasta;
         }
         return lasta;
     }
 
-    function title(title) {
-        return `<h6>${title}</h6>`
-    }
-
     function highlightH(authors) {
         return authors.replace("Huyen Nguyen", "<b>Huyen N. Nguyen</b>");
     }
 }
+
+
 
 function publications(){
     d3.tsv("data/publications.tsv", function (error, data_) {
@@ -46,9 +45,6 @@ function publications(){
         var minYear = 2018;
 
         datapub = data_.filter(d => new Date(d.Time).getFullYear() >= minYear);
-
-        console.log(JSON.parse(JSON.stringify(data_)));
-        console.log(datapub)
         // preprocess
         datapub.forEach(d => {
             d.Time = new Date(d.Time);
@@ -83,27 +79,25 @@ function yearNestPaper(data) {
 
 }
 
-function featuredPublications() {
+    function featuredPublications() {
     d3.tsv("data/publications.tsv", function (error, data_) {
-        if (error) throw error;
+    if (error) throw error;
 
-        var minYear = 2018;
+    var minYear = 2018;
 
-        datapub = data_.filter(d => new Date(d.Time).getFullYear() >= minYear);
-        // preprocess
-        datapub.forEach(d => {
-            d.Time = new Date(d.Time);
-            d.Authors = d.Authors.split(',').map(n => n.trim());
-        });
-        let featuredData = datapub.filter(d => parseInt(d.Highlight) > 0).sort((a, b) => a.Highlight - b.Highlight);
-
-        console.log(JSON.parse(JSON.stringify(data_)));
-        console.log(featuredData)
-        featuredNestPaper(featuredData);
+    datapub = data_.filter(d => new Date(d.Time).getFullYear() >= minYear);
+    // preprocess
+    datapub.forEach(d => {
+    d.Time = new Date(d.Time);
+    d.Authors = d.Authors.split(',').map(n => n.trim());
     });
-}
+    let featuredData = datapub.filter(d => parseInt(d.Highlight) > 0).sort((a, b) => a.Highlight - b.Highlight);
 
-function featuredNestPaper(data) {
+    featuredNestPaper(featuredData);
+    });
+    }
+
+    function featuredNestPaper(data) {
     var dataByYear = d3.nest().key(k => Number.isInteger(parseInt(k.Highlight))).entries(data);
 
     console.log(dataByYear)
@@ -114,7 +108,7 @@ function featuredNestPaper(data) {
 
     yearContain_i.exit().remove();
     var yearContain = yearContain_i
-        .enter().append('div').attr('class', 'pubYear');
+    .enter().append('div').attr('class', 'pubYear');
 
     listPapers(mainContain, true)
-}
+    }

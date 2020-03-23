@@ -7,6 +7,7 @@ body {
   padding-top: 56px;
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.64;
+  font-weight: 400;
 }
 
 .non-deco{
@@ -117,7 +118,7 @@ th {
 /* --------------- publications --------------- */
 
 .th-image {
-  padding-top: 8px;
+  padding-top: 10px;
   padding-right: 10px;
 }
 
@@ -131,19 +132,21 @@ th {
 .paperImage:hover {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
-
+.paperTitle {
+  font-size: 1.3rem;
+  font-weight: 400!important;
+  color: black !important;
+}
 .paperDetail {
   line-height: 1.8;
 }
 
 .paperDetail a {
-  margin-right: 1rem;
+  margin-right: 1.2rem;
+  /*font-weight: 300;*/
+  color: rgba(36, 109, 191, 0.9);
 }
 
-.paperTitle {
-  font-size: 1.3rem;
-
-}
 .paperDetail .venue {
-  color: #7191af;
+  color: #818185;
 }
