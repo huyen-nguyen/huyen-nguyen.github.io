@@ -39,7 +39,7 @@ function listPapers(mainContain, featured) {
 
 
 function publications(){
-    d3.tsv("../data/publications.tsv", function (error, data_) {
+    d3.tsv("/huyen-nguyen.github.io/data/publications.tsv", function (error, data_) {
         if (error) throw error;
 
         var minYear = 2018;
@@ -80,7 +80,7 @@ function yearNestPaper(data) {
 }
 
     function featuredPublications() {
-    d3.tsv("data/publications.tsv", function (error, data_) {
+    d3.tsv("/huyen-nguyen.github.io/data/publications.tsv", function (error, data_) {
     if (error) throw error;
 
     var minYear = 2018;
