@@ -7,7 +7,7 @@ function listPapers(mainContain, featured) {
         .append("a")
         .attr('href', d => d.pdf)
         .append('img').attr("class", "paperImage")
-        .attr('src', d => d.image).attr('width', 190).attr('height', 110);
+        .attr('src', d => featured? d.image : "../" + d.image).attr('width', 190).attr('height', 110);
 
     publicationArea.append('th').attr("class","paperDetail").attr('width', '85%')
         .html(d => `
@@ -39,7 +39,7 @@ function listPapers(mainContain, featured) {
 
 
 function publications(){
-    d3.tsv("data/publications.tsv", function (error, data_) {
+    d3.tsv("../data/publications.tsv", function (error, data_) {
         if (error) throw error;
 
         var minYear = 2018;
@@ -60,7 +60,7 @@ function yearNestPaper(data) {
 // seperate year
     var dataByYear = d3.nest().key(k => k.Time.getFullYear()).sortKeys((a, b) => b - a).entries(data);
 
-    console.log(dataByYear)
+    // console.log(dataByYear)
 
     // append pubs by year
     var mainContain = d3.select('#paperContainer');
@@ -99,8 +99,6 @@ function yearNestPaper(data) {
 
     function featuredNestPaper(data) {
     var dataByYear = d3.nest().key(k => Number.isInteger(parseInt(k.Highlight))).entries(data);
-
-    console.log(dataByYear)
 
     // append pubs by year
     var mainContain = d3.select('#featuredPaperContainer');

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Huyen Nguyen</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link rel="shortcut icon" href="../images/Drawing.png"/>
+	<link
+		href="https://fonts.googleapis.com/css?family=Volkhov|Source+Serif+Pro|Source+Sans+Pro:300,400,700&display=swap"
+		rel="stylesheet">
+	<link href="../css/styles.css" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet">
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+
+<body>
+<div id="nav-placeholder"></div>
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+	$("#nav-placeholder").load("../navigation.html");
+
+	setTimeout(function(){
+		$("#pubBtn").addClass("active");
+	}, 100);
+
+</script>
+<!--main content-->
+<div class="container pt-lg-5">
+	<div class="pb-lg-5" id="paperContainer">
+
+	</div>
+</div>
+
+<script src="../js/publication.js"></script>
+<script>
+	publications();
+</script>
+<div id="footer-placeholder"></div>
+<script>$("#footer-placeholder").load("../footer.html");</script>
+</body>
+
+
+</html>
