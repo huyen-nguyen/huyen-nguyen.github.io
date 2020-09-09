@@ -20,7 +20,7 @@ function listPapers(mainContain, featured) {
                         ${d.github !== '' ? `<a href="${d.github}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>` : ''}
                         ${d.Demo !== '' ? `<a href="${d.Demo}"><i class="far fa-play-circle" aria-hidden="true"></i> Demo</a>` : ''}
                         ${d.Example !== '' ? `<a href="${d.Example}"><i class="fas fa-th" aria-hidden="true"></i> Examples</a>` : ''}
-                        ${d.bib !== '' ? `<a href="${d.bib}"> <i class="fas fa-book" aria-hidden="true"></i> BibTex</a>
+                        ${d.bib !== '' ? `<a href="${featured? d.bib : "../" + d.bib}"> <i class="fas fa-book" aria-hidden="true"></i> BibTex</a>
                         <br><br>` : ''}`);
 
     function arraytoAuthor(a) {
