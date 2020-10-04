@@ -14,6 +14,7 @@ function listPapers(mainContain, featured) {
                         <a class="paperTitle non-deco" href="${d.pdf}">${d.Title}</a><br>
                         ${highlightH(arraytoAuthor(d.Authors))} <br>
                         <span class="venue">${d.Venue}</span> <br>
+                        <span class="award"> ${d.Award !== '' ? `<i class="fas fa-award" style="color: #ed9f04; font-weight: bold"></i> ${d.Award}<br>` : ''}</span>
                         ${d.pdf !== '' ? `<a href="${d.pdf}"><i class="far fa-file-pdf" aria-hidden="true"></i> PDF</a>` : ''}
                         ${d.doi !== '' ? `<a href="${d.doi}"><i class="fas fa-link" aria-hidden="true"></i> DOI</a>` : ''}
                         ${d.video !== '' ? `<a href="${d.video}"><i class="fas fa-film" aria-hidden="true"></i></i> Video</a>` : ''}
