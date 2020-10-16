@@ -21,7 +21,33 @@ body {
 }
 
 a {
-  color:#0065c7;
+  color: #7f6c5e;
+}
+a:hover {
+  color: #7f6c5e;
+  opacity: 0.6;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+#intro a {
+  color: #7f6c5e;
+  border-bottom: 1px dashed;
+}
+
+#news a {
+  color: #7f6c5e;
+  border-bottom: 1px dashed;
+}
+
+#bioContent a {
+  color: #7f6c5e;
+  border-bottom: 1px dashed;
+}
+
+.card-title a{
+  color: black;
+  /*font-weight: bold;*/
 }
 
 b {
@@ -126,7 +152,7 @@ th {
 }
 
 .th-image {
-  padding-top: 10px;
+  padding-top: 5px;
   padding-right: 10px;
 }
 
@@ -138,7 +164,7 @@ th {
 }
 
 .paperImage:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  box-shadow: 0 0 3px 2px rgba(0, 140, 186, 0.38);
 }
 .paperTitle {
   font-size: 1.3rem;
@@ -149,12 +175,22 @@ th {
   line-height: 1.8;
 }
 
-.paperDetail a {
+.paperDetail a{
   margin-right: 1.2rem;
   line-height: 1.3;
   /*font-weight: 300;*/
-  color: rgba(36, 109, 191, 0.9);
+  /*color: rgba(36, 109, 191, 0.9);*/
   /*color: black;*/
+  border-bottom: none
+}
+
+.paperDetail p{
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.paperDetail h5{
+  margin-block-end: 0;
 }
 
 .paperDetail .venue {

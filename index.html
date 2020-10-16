@@ -68,15 +68,63 @@
 
 </head>
 
-<body>
-<div id="nav-placeholder"></div>
+<body id="home">
+<div id="nav-placeholder">
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="http://myweb.ttu.edu/huyenngu/" style="font-size: x-large">Huyen N. Nguyen</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive" style="font-size: large">
+
+            <ul class="navbar-nav mr-auto" id="leftNav">
+                <li class="nav-item active" id="homeBtn">
+                    <a class="nav-link" id="homeNav" href="https://myweb.ttu.edu/huyenngu/">Home
+                    </a>
+                </li>
+
+                <li class="nav-item" id="pubBtn">
+                    <a class="nav-link" id="pubNav" href="https://myweb.ttu.edu/huyenngu/publications/">Publications</a> <!--  local  -->
+
+                </li>
+                <li class="nav-item" id="bioBtn">
+                    <a class="nav-link" id="bioNav" href="https://myweb.ttu.edu/huyenngu/bio/">Bio</a> <!--  online  -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://myweb.ttu.edu/huyenngu/cv/CV_Huyen.pdf" title="CV - Huyen Nguyen">CV</a> <!--
+                    online  -->
+                </li>
+
+            </ul>
+            <ul class="navbar-nav ml-auto" id="rightNav">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://scholar.google.com/citations?user=tsrO-ZgAAAAJ&hl=en" target="_blank">Google Scholar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.youtube.com/channel/UC73eEp4YZ6SBHUKIg-YwQWQ" target="_blank">YouTube</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/huyen-n-nguyen/" target="_blank">LinkedIn</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/huyen-nguyen" target="_blank">GitHub</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+</div>
 
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="js/selection.js"></script>
 
-<script>
+<!-- <script>
     $("#nav-placeholder").load("navigation.html");
 
     setTimeout(function () {
@@ -84,7 +132,7 @@
         f();
     }, 100);
 
-</script>
+</script> -->
 
 <!-- Page Content -->
 <div class="container bg-white">
@@ -114,7 +162,7 @@
             <!--            <div class="col-lg-1 pt-2" style="text-align: center;">-->
 
             <!--            </div>-->
-            <div class="col-lg-9">
+            <div class="col-lg-9" id="intro">
                 <h1 class="display-5 pb-3">Hi! I'm Huyen Nguyen</h1>
 
                 <p class="lead">I'm a PhD student in Computer Science at Texas Tech
@@ -149,23 +197,22 @@
 
     <!-- Page Features -->
     <div class="row pt-lg-5">
-        <div class="col-lg-3 pt-lg-2">
+        <div class="col-lg-3 pt-lg-2 pr-lg-3" id="news">
             <h4 style="padding-bottom: 2px">News</h4>
             <hr>
             <h5 class="red">VAST Challenge 2020 Honorable Mention</h5>
-            <p>Huyen and Team won the Honorable Mention for <i><a target="_blank"
+            <p>Huyen and Team won the Honorable Mention for <a target="_blank"
                                                                   href="https://vast-challenge.github.io/2020/index.html">VAST
-                2020</a></i> Mini-challenge 2: Object of
+                2020</a> Mini-challenge 2: Object of
                 the Search,
-                applying visual analytics to correct classification errors in the results from a
-                machine learning model. </p>
+                applying visual analytics for misclassification correction and analysis. <br><a href="https://huyen-nguyen.github.io/VAST2020mc2/TTU-Nguyen-MC2/">[Report]</a></p>
             <hr>
 
             <h5 class="red">Visionary Grant at Gordon Research Conference</h5>
             <p>"Visualizing Qualitative Data for Science and
-                Education" received the <i><a class="non-deco"
+                Education" received the <a class="non-deco"
                                               href="https://ceps.unh.edu/chemistry/dr-kathleen-jeffery-team-win-visionary-grant-gordon-research-conference">Visionary
-                    Grant Award</a></i>, supported by a generous grant from NASA for
+                    Grant Award</a>, supported by a generous grant from NASA for
                 interdisciplinary
                 research.</p>
             <hr>
@@ -173,13 +220,15 @@
                 Workshop Poster</h5>
             <p>The poster is about Interactive Visualization for Earthquake Analysis from Social Media Data, presented
                 in
-                the <i><a class="non-deco" href="http://www.math.ttu.edu/scmlls2019/">workshop held at TTU.</a></i></p>
+                the <a class="non-deco" href="http://www.math.ttu.edu/scmlls2019/">workshop held at TTU.</a>
+                <br><a href="papers/2019-EQSA-Talk.pdf">[Poster]</a>
+            </p>
             <hr>
             <h5 class="red">Visualization in Science and Education - Gordon Research Conference Poster</h5>
-            <p>This year, the conference is <i><a class="non-deco"
+            <p>This year, the conference is <a class="non-deco"
                                                   href="https://www.grc.org/visualization-in-science-and-education-conference/2019/">Educating
                 Skillful Visualizers.
-            </a></i> The poster is about Interactive Visualization
+            </a> The poster is about Interactive Visualization
                 for Topic Evolution, applied on educational domain.</p>
             <hr>
         </div>

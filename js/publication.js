@@ -5,17 +5,17 @@ function listPapers(mainContain, featured) {
         .append('tr');
     publicationArea.append('th').attr("class", "th-image").attr('width', '15%')
         .append("a")
-        .attr('href', d => d.pdf)
+        .attr('href', d => getPDF(featured, d.pdf))
         .append('img').attr("class", "paperImage")
         .attr('src', d => featured? d.image : "../" + d.image).attr('width', 190).attr('height', 110);
 
     publicationArea.append('th').attr("class","paperDetail").attr('width', '85%')
         .html(d => `
-                        <a class="paperTitle non-deco" href="${d.pdf}">${d.Title}</a><br>
-                        ${highlightH(arraytoAuthor(d.Authors))} <br>
-                        <span class="venue">${d.Venue}</span> <br>
-                        <span class="award"> ${d.Award !== '' ? `<i class="fas fa-award" style="color: #ed9f04; font-weight: bold"></i> ${d.Award}<br>` : ''}</span>
-                        ${d.pdf !== '' ? `<a href="${d.pdf}"><i class="far fa-file-pdf" aria-hidden="true"></i> PDF</a>` : ''}
+                        <h5><a class="paperTitle non-deco" href="${d.pdf}">${d.Title}</a></h5>
+                        <p>${highlightH(arraytoAuthor(d.Authors))}</p>
+                        <p class="venue">${d.Venue}</p>
+                        <p class="award"> ${d.Award !== '' ? `<i class="fas fa-award" style="color: #ed9f04; font-weight: bold"></i> ${d.Award}<br>` : ''}</p>
+                        ${d.pdf !== '' ? `<a href="${getPDF(featured, d.pdf)}"><i class="far fa-file-pdf" aria-hidden="true"></i> PDF</a>` : ''}
                         ${d.doi !== '' ? `<a href="${d.doi}"><i class="fas fa-link" aria-hidden="true"></i> DOI</a>` : ''}
                         ${d.video !== '' ? `<a href="${d.video}"><i class="fas fa-film" aria-hidden="true"></i></i> Video</a>` : ''}
                         ${d.github !== '' ? `<a href="${d.github}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>` : ''}
@@ -35,12 +35,18 @@ function listPapers(mainContain, featured) {
     function highlightH(authors) {
         return authors.replace("Huyen Nguyen", "<b>Huyen N. Nguyen</b>");
     }
+
+    function getPDF(feature, pdf) {
+    if ((pdf.startsWith("papers/")) && (!feature)) {
+        return "../" + pdf
+    } else return pdf
+}
 }
 
 
 
 function publications(){
-    d3.tsv("/huyen-nguyen.github.io/data/publications.tsv", function (error, data_) {
+    d3.tsv("../data/publications.tsv", function (error, data_) {
         if (error) throw error;
 
         var minYear = 2018;
@@ -81,7 +87,7 @@ function yearNestPaper(data) {
 }
 
     function featuredPublications() {
-    d3.tsv("/huyen-nguyen.github.io/data/publications.tsv", function (error, data_) {
+    d3.tsv("data/publications.tsv", function (error, data_) {
     if (error) throw error;
 
     var minYear = 2018;
