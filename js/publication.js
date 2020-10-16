@@ -4,7 +4,7 @@ function listPapers(mainContain, featured) {
         .append('table').style('width', '100%').style('margin-left', () => (featured) ? '0px' : '20px')
         .append('tr');
     publicationArea.append('th').attr("class", "th-image").attr('width', '15%')
-        .append("a")
+        .append("a").attr("class", "anchorPaperImage")
         .attr('href', d => getPDF(featured, d.pdf))
         .append('img').attr("class", "paperImage")
         .attr('src', d => featured? d.image : "../" + d.image).attr('width', 190).attr('height', 110);
@@ -13,7 +13,7 @@ function listPapers(mainContain, featured) {
         .html(d => `
                         <h5><a class="paperTitle non-deco" href="${d.pdf}">${d.Title}</a></h5>
                         <p>${highlightH(arraytoAuthor(d.Authors))}</p>
-                        <p class="venue">${d.Venue}</p>
+                        <p class="venue">${d.doi !== '' ? `<a href="${d.doi}">${getVenue(featured, d.Venue)} </a>` : getVenue(featured, d.Venue)}</p>
                         <p class="award"> ${d.Award !== '' ? `<i class="fas fa-award" style="color: #ed9f04; font-weight: bold"></i> ${d.Award}<br>` : ''}</p>
                         ${d.pdf !== '' ? `<a href="${getPDF(featured, d.pdf)}"><i class="far fa-file-pdf" aria-hidden="true"></i> PDF</a>` : ''}
                         ${d.doi !== '' ? `<a href="${d.doi}"><i class="fas fa-link" aria-hidden="true"></i> DOI</a>` : ''}
@@ -36,11 +36,16 @@ function listPapers(mainContain, featured) {
         return authors.replace("Huyen Nguyen", "<b>Huyen N. Nguyen</b>");
     }
 
-    function getPDF(feature, pdf) {
-    if ((pdf.startsWith("papers/")) && (!feature)) {
-        return "../" + pdf
-    } else return pdf
-}
+    function getPDF(featured, pdf) {
+        if ((pdf.startsWith("papers/")) && (!featured)) {
+            return "../" + pdf
+        } else return pdf
+    }
+
+    function getVenue(featured, venue){
+        let short = venue.split("|")[1];
+        return featured ? (short ? short : venue) : (venue)
+    }
 }
 
 
@@ -79,7 +84,7 @@ function yearNestPaper(data) {
 
     // each header
     yearContain.append('br');
-    yearContain.append('span').html(d => `<h3>${d.key}</h3>`);
+    yearContain.append('span').html(d =>`<h3>${d.key}</h3>`);
     yearContain.append('hr')
 
     listPapers(mainContain, false)
