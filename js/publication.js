@@ -11,7 +11,7 @@ function listPapers(mainContain, featured) {
 
     publicationArea.append('th').attr("class","paperDetail").attr('width', '85%')
         .html(d => `
-                        <h5><a class="paperTitle non-deco" href="${d.pdf}">${d.Title}</a></h5>
+                        <h5><a class="paperTitle non-deco" href="${getPDF(featured, d.pdf)}">${d.Title}</a></h5>
                         <p>${highlightH(arraytoAuthor(d.Authors))}</p>
                         <p class="venue">${d.doi !== '' ? `<a href="${d.doi}">${getVenue(featured, d.Venue)} </a>` : getVenue(featured, d.Venue)}</p>
                         <p class="award"> ${d.Award !== '' ? `<i class="fas fa-award" style="color: #ed9f04; font-weight: bold"></i> ${d.Award}<br>` : ''}</p>
