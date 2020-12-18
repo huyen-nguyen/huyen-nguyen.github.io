@@ -19,11 +19,11 @@ research in interactive data visualization and visual analytics. I'm a member of
   Tommy Dang](http://www.myweb.ttu.edu/tnhondan/).
 
 
-  Across the vast range of interactive data, my research interests include **interactive data
-  visualization**, **visual analytics** and **human-computer interaction**, supporting the
+  My research interests include **interactive data
+  visualization**, **visual analytics** and **human-computer interaction** (HCI), supporting the
   understanding and insight discovery of quantitative and qualitative data. I build web-based interactive
   visualization with [D3.js]((https://d3js.org/)) and I study to construct a template
-  for event  detection mechanisms in visualizing time-series data.
+  for event  detection mechanisms in time-series data.
   
 
 Besides my professional activities, I play the ukulele, love walking and hiking in beautiful places. I trekked Mount 

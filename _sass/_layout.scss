@@ -6,8 +6,8 @@
    padding-bottom: 70px;
    color: var(--global-text-color);
    background-color: var(--global-bg-color);
-   //font-family: "Source Sans Pro";
-   font-family: "Helvetica";
+   font-family: "Source Sans Pro";
+   //font-family: "Helvetica";
  }
 
  body.fixed-top-nav {
@@ -20,9 +20,9 @@
    padding-bottom: 0;
  }
 
-header.post-header{
-  margin-bottom: 3rem!important;
-}
+//header.post-header{
+//  margin-bottom: 3rem!important;
+//}
 
 .container {
   max-width: $max-content-width;
@@ -30,7 +30,7 @@ header.post-header{
 
 // Profile
 div.profile{
-  width: 25%;
+  width: 100%;
 }
 
 .profile {
@@ -43,14 +43,15 @@ div.profile{
   text-align: right;
 }
 
-//.rounded {
-//  border-radius: 7.5rem!important;
-//}
-
+.rounded {
+  border-radius: 7.5rem!important;
+}
+.desc-p{
+  margin-bottom: 0.5rem;
+}
 // TODO: redefine content layout.
 
-div.contact{
-  line-height: 2.1;
+p.contact{
   a{
     color: inherit;
     border-bottom: 1px dashed;
@@ -63,7 +64,11 @@ div.contact{
   }
 }
 
-
+.clearfix{
+  p{
+    font-size: 1.12rem;
+  }
+}
 /******************************************************************************
  * Publications
  ******************************************************************************/
