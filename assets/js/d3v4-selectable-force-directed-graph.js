@@ -8,8 +8,12 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     var width = +svg.attr("width"),
         height = +svg.attr("height");
 
-    let parentWidth = d3v4.select('svg').node().parentNode.clientWidth;
-    let parentHeight = d3v4.select('svg').node().parentNode.clientHeight;
+    // var parentWidth = d3v4.select('svg').node().parentNode.clientWidth;
+    // var parentHeight = d3v4.select('svg').node().parentNode.clientHeight;
+
+    // set direct assignment
+    var parentWidth = document.getElementById("left-col").offsetWidth;
+    var parentHeight = document.getElementById("left-col").offsetHeight - document.getElementById("image-div").offsetHeight;
 
     var svg = d3v4.select('svg')
         .attr('width', parentWidth)
@@ -83,13 +87,13 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 
 
     // add titles for mouseover blurbs
-    node.append("title")
-        .text(function(d) {
-            if ('name' in d)
-                return d.name;
-            else
-                return d.id;
-        });
+    // node.append("title")
+    //     .text(function(d) {
+    //         if ('name' in d)
+    //             return d.name;
+    //         else
+    //             return d.id;
+    //     });
 
     var simulation = d3v4.forceSimulation()
         .force("link", d3v4.forceLink()

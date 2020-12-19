@@ -24,8 +24,9 @@ layout: default
                     {% endif %}
                 </div>
                 {% endif %}
-                <div align='center' id="d3_selectable_force_directed_graph"
-                     style="margin: auto; margin-bottom: 12px">
+                <div align='center'
+                     id="d3_selectable_force_directed_graph"
+                     style="margin: auto; margin-bottom: 12px; height: 180px">
                     <svg></svg>
                 </div>
             </div>
@@ -74,15 +75,15 @@ layout: default
 
 </div>
 <script>
-    d3.select('#d3_selectable_force_directed_graph')
-        .style("width", document.getElementById("left-col").offsetWidth + "px")
-        .style("height", (document.getElementById("left-col").offsetHeight -
-            document.getElementById("image-div").offsetHeight) + "px")
+    document.getElementById("d3_selectable_force_directed_graph").style.height =
+        (document.getElementById("left-col").offsetHeight -
+        document.getElementById("image-div").offsetHeight) + "px";
+
+    document.getElementById("d3_selectable_force_directed_graph").style.width = document.getElementById("left-col").offsetWidth + "px"
 
     var svg = d3.select('#d3_selectable_force_directed_graph');
 
-
-    d3.json('../assets/data/miserables.with-ids.json', function (error, graph) {
+    d3.json('../assets/data/simplified.json', function (error, graph) {
         if (!error) {
             //console.log('graph', graph);
             createV4SelectableForceDirectedGraph(svg, graph);
