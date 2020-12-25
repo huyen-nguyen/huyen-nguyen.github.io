@@ -25,11 +25,12 @@
 }
 
 // Profile
-div.profile{
+#image-div{
   width: 100%;
-}
-
-.profile {
+  text-align: center;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+  padding-top: .5rem;
   img {
     width: 100%;
   }
@@ -40,7 +41,7 @@ div.profile{
 }
 
 .profile-rounded {
-  border-radius: 7.5rem!important;
+  border-radius: 11.5rem!important;
 }
 .desc-p{
   margin-bottom: 0.5rem;
@@ -52,17 +53,48 @@ p.contact{
     color: inherit;
     border-bottom: 1px dashed;
     text-decoration: none;
-    margin-left: 10px;
+    margin-right: 10px;
   }
   a:hover{
     opacity: 0.6;
     transition: 0.3s;
+  }
+  span{
+    margin-right: 10px;
   }
 }
 
 .clearfix{
   p{
     font-size: 1.12rem;
+  }
+}
+#breakline{
+  display: none;
+}
+
+@media only screen and (max-width: 1000px){
+  #d3_selectable_force_directed_graph{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  #breakline{
+    display: block;
+  }
+  #image-div{
+    padding-right: 0;
+    padding-bottom: 1rem;
+    img {
+      width: 45%;
+    }
+  }
+  header.post-header{
+    text-align: center;
+  }
+  .contact{
+    line-height: 2.1;
   }
 }
 /******************************************************************************

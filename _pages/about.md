@@ -6,7 +6,7 @@ description: Ph.D. Student in Computer Science • <a target="_blank" href="http
 
 profile:
   align: right
-  image: Huyen.jpeg
+  image: Huyen_round.png
   
 
 news: true  # includes a list of news items

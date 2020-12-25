@@ -12,7 +12,7 @@ layout: default
             <div id="left-col" class="col-sm-3">
                 {% if page.profile %}
                 <div id="image-div"
-                     class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %} pr-4 pb-3 pt-2">
+                     class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
                     {% if page.profile.image %}
                     <img class="img-fluid z-depth-1 profile-rounded"
                          src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}">
@@ -39,9 +39,11 @@ layout: default
                         </h1>
                         <p class="desc desc-p">{{ page.description }}</p>
                         <p class="contact pb-2">
-                            <i class="far fa-envelope"></i> huyen.nguyen (at) ttu.edu
+                            <span><i class="far fa-envelope"></i> huyen.nguyen (at) ttu.edu</span>
+                            <br id="breakline"/>
                             <a href="https://scholar.google.com/citations?user=tsrO-ZgAAAAJ&hl=en"><i
                                     class="fas fa-graduation-cap"></i> Scholar </a>
+                            <a href="https://www.linkedin.com/in/huyen-n-nguyen/"><i class="fab fa-linkedin"></i> LinkedIn</a>
                             <a href="https://twitter.com/huyendoesstuff"><i class="fab fa-twitter"></i> Twitter</a>
                             <a href="https://github.com/huyen-nguyen"><i class="fab fa-github"></i> GitHub </a>
                         </p>
