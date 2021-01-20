@@ -5,7 +5,7 @@
             {% assign sorted_projects = site.projects | sort: "importance" | where:"selected","true" %}
             {% for project in sorted_projects %}
 
-            <div class="col-md-4 project-col">
+            <div class="col-md-4">
                 <div class="card hoverable">
                     <a class="img-preview" target="_blank">
                         {% if project.img %}

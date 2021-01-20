@@ -2,11 +2,13 @@
 layout: about
 title: about
 permalink: /
-description: Ph.D. Student in Computer Science • <a target="_blank" href="https://www.ttu.edu/">Texas Tech</a>
+description: 
 
 profile:
   align: right
-  image: Huyen_pic.jpg
+  image: Huyen-c.jpeg
+  address: >
+      <p>huyen.nguyen (at) ttu.edu</p>
 
 news: true  # includes a list of news items
 projects: true
@@ -14,6 +16,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
+<!---Ph.D. Student in Computer Science • <a target="_blank" href="https://www.ttu.edu/">Texas Tech</a>--->
 
 Hi! I'm a PhD student in Computer Science at [Texas Tech University](https://www.ttu.edu/), doing 
 research in interactive data visualization and visual analytics. I'm a member of the  [interactive Data Visualization Lab (iDVL)](https://idatavisualizationlab.github.io/), where I work with [Prof.
