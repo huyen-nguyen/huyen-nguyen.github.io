@@ -4,6 +4,8 @@ title: project 4
 description: another without an image
 img:
 importance: 3
+selected: false
+published: false
 ---
 
 Every project has a beautiful feature showcase page.

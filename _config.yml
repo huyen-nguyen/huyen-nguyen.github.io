@@ -2,36 +2,38 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Visualization  # the website title (if blank, full name will be used instead)
+title: blank # the website title (if blank, full name will be used instead)
 first_name: Huyen
 middle_name: N.
 last_name: Nguyen
-email: huyen.nguyen [at] ttu.edu
+email: you@example.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Visualization Researcher, Computer Science PhD student at Texas Tech
+  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
-  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-#  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-#  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with
+  <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme ♡
 
 url:  # the base hostname & protocol for your site
-baseurl: # the subpath of your site, e.g. /blog/
+baseurl:  # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
+impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
 # -----------------------------------------------------------------------------
 # Layout
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: false
+footer_fixed: true
+
+# Dimensions
+max_width: 1000px
+
 # TODO: add layout settings (single page vs. multi-page)
 
 # -----------------------------------------------------------------------------
 # Open Graph
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
-# To achieve this, change serve_og_meta to true and then provide the URL of the
-# preview image as the value of og_image.
 serve_og_meta: false # Include Open Graph meta tags in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
@@ -39,7 +41,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: # huyen-nguyen
+github_username: # your GitHub user name
 twitter_username: # your Twitter handle
 linkedin_username: # your LinkedIn user name
 scholar_userid: # your Google Scholar ID
@@ -49,12 +51,16 @@ quora_username: # your Quora username
 publons_id: # your ID on Publons
 research_gate_profile: # your profile on ResearchGate
 blogger_url: # your blogger URL
+work_url: # work page URL
 keybase_username: # your keybase user name
+wikidata_id: # your wikidata id
 
-contact_note: #>
-#  You can even add a little note about which of these is the best way to reach you.
+contact_note: >
+  You can even add a little note about which of these is the best way to reach you.
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
+panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
+
 
 # -----------------------------------------------------------------------------
 # Bio
@@ -63,11 +69,13 @@ google_analytics: UA-XXXXXXXXX # out your google-analytics code
 bio_name: bio  # your blog must have a name for it to show up in the nav bar
 bio_description: My current role and background
 
+
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
+
 blog_name: huyen's blog  # your blog must have a name for it to show up in the nav bar
-blog_description: some writing and stories along the way
+blog_description: some stories along the way
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -133,6 +141,7 @@ plugins:
 scholar:
 
   last_name: Nguyen
+  first_name: [Huyen, N.]
 
   style: apa
   locale: en
@@ -154,12 +163,13 @@ scholar:
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics:  false
-enable_mansory:           true
-enable_math:              true
-enable_tooltips:          false
-enable_darkmode:          false
-show_social_icons:        false
+enable_google_analytics:    false
+enable_panelbear_analytics: false
+enable_mansory:             true
+enable_math:                true
+enable_tooltips:            false
+enable_darkmode:            true
+show_social_icons:          false
 
 # -----------------------------------------------------------------------------
 # Library versions
@@ -192,3 +202,5 @@ mdb:
 popper:
   version: "2.4.4"
   integrity: "sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A=="
+
+port: 2900

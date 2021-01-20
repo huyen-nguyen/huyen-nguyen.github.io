@@ -4,6 +4,10 @@
 
 // Typography
 
+p, h1, h2, h3, h4, h5, h6, em, div, span, strong {
+  color: var(--global-text-color);
+}
+
 a, table.table a {
   color: var(--global-theme-color);
   &:hover {
@@ -50,9 +54,19 @@ a, table.table a {
   }
 }
 
+p.contact{
+  margin-top: -0.3rem;
+  a{
+    margin-left: 1rem;
+    color: inherit;
+    border-bottom: 1px dashed;
+    text-decoration: none;
+  }
+}
+
 @media (min-width: 576px) {
   .profile {
-    width: 30%;
+    width: 100%;
     .address {
       p { display: block; }
     }
@@ -119,7 +133,7 @@ a, table.table a {
     display: block;
     width: 22px;
     height: 2px;
-    background-color: $grey-color-dark;
+    background-color: var(--global-icon-color);
     border-radius: 1px;
     margin-bottom: 4px;
     transition: all 0.2s;
@@ -151,8 +165,24 @@ a, table.table a {
 
 
 // News
-.news{
-  margin-top: 2rem;
+
+.news-col{
+  padding-right: 0px;
+  padding-right: 0px;
+}
+
+.news-date{
+  color: #505963;
+  font-size: 0.9rem;
+}
+
+.news-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.news-content{
+
 }
 .news table td {
   font-size: 1rem;
@@ -161,6 +191,12 @@ a, table.table a {
 
 .news table th {
   color: var(--global-text-color);
+}
+
+// Projects at About
+
+.project-about {
+  padding-top: 2rem;
 }
 
 // Social (bottom)
@@ -184,10 +220,10 @@ a, table.table a {
 
 // Footer
 footer.fixed-bottom {
-  color: var(--global-footer-text-color);
   background-color: var(--global-footer-bg-color);
   font-size: 0.75rem;
   .container {
+    color: var(--global-footer-text-color);
     padding-top: 9px;
     padding-bottom: 8px;
   }
@@ -245,10 +281,20 @@ footer.sticky-bottom {
   }
 }
 
-.pagination .page-item.active .page-link {
-  background-color: var(--global-theme-color);
-  &:hover {
-    background-color: var(--global-theme-color);
+.pagination {
+  .page-item {
+    .page-link {
+      color: var(--global-text-color);
+      &:hover {
+        color: $black-color;
+      }
+    }
+    &.active .page-link {
+      background-color: var(--global-theme-color);
+      &:hover {
+        background-color: var(--global-theme-color);
+      }
+    }
   }
 }
 
@@ -267,7 +313,7 @@ footer.sticky-bottom {
 
 .projects {
   .grid-item {
-    width: 250px;
+    //width: 250px;
     margin-bottom: 10px;
     a {
       color: black;
@@ -279,6 +325,10 @@ footer.sticky-bottom {
   }
   .card img {
     width: 100%;
+  }
+  .project-col{
+    padding-right: 0;
+    padding-left: 20px;
   }
 }
 
@@ -395,10 +445,10 @@ footer.sticky-bottom {
         transition: all 0.15s ease;
       }
       div.abstract.hidden {
-        border: dashed 1px white;
+        border: dashed 1px var(--global-bg-color);
       }
       div.abstract.hidden.open {
-        border-color: $grey-color;
+        border-color: var(--global-text-color);
       }
     }
   }

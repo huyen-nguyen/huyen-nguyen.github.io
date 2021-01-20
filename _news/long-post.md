@@ -1,8 +1,9 @@
 ---
 layout: post
-title: A long announcement with details
-date: 2015-11-07 16:11:00-0400
-inline: false
+title: VAST Challenge 2020 Honorable Mention 
+date: 2020-08-15 16:11:00-0400
+inline: true
+published: false
 ---
 
 Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
