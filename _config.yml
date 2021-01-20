@@ -23,7 +23,7 @@ impressum_path:  # set to path to include impressum link in the footer, use the 
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 
 # Dimensions
 max_width: 1100px
@@ -76,14 +76,14 @@ bio_description: My current role and background
 
 blog_name: huyen's blog  # your blog must have a name for it to show up in the nav bar
 blog_description: some stories along the way
-permalink: /blog/:year/:title/
+permalink: /blog/:year/:month/:title/
 
 # Pagination
 pagination:
   enabled: true
 
 # Comments
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: huyen-nguyen-github-io # put your disqus shortname
 
 # -----------------------------------------------------------------------------
 # Collections

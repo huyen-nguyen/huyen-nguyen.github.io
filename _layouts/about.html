@@ -5,11 +5,11 @@ layout: default
 <div class="post pt-3">
 
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-sm-3">
             {% if page.profile %}
             <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right pr-3 pl-3 pb-1 pt-3{% endif %}">
                 {% if page.profile.image %}
-                <img class="img-fluid rounded"
+                <img class="img-fluid"
                      src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}">
                 {% endif %}
                 {% if page.profile.address %}
@@ -21,7 +21,7 @@ layout: default
             {% endif %}
         </div>
 
-        <div class="col-md-9">
+        <div class="col-sm-9">
             <header class="post-header pt-1">
                 <h1 class="post-title">
                     {% if site.title == blank %}{{ site.title }}{% else %}<span

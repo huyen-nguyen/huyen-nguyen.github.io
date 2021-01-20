@@ -5,16 +5,3 @@ _site
 vendor
 .idea/
 .DS_Store
-_posts/2015-03-15-formatting-and-links.md
-_posts/2015-05-15-images.md
-_posts/2015-07-15-code.md
-_posts/2015-10-20-comments.md
-_posts/2015-10-20-math.md
-_posts/2018-12-22-distill.md
-_posts/2020-09-28-github-metadata.md
-_site/blog/2015
-_site/blog/2018
-_site/blog/2020/github-metadata
-blog/2015
-blog/2018
-blog/2020/github-metadata

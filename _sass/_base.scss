@@ -44,7 +44,7 @@ a, table.table a {
 
   .address {
     margin-bottom: 5px;
-    margin-top: 12px;
+    margin-top: 21px;
     //font-family: monospace;
     font-size: 1rem;
     text-align: center;
@@ -173,13 +173,13 @@ p.contact{
 }
 
 .news-date{
-  color: #505963;
+  color: var(--global-icon-color);
   font-size: 0.9rem;
 }
 
 .news-title {
-  font-weight: bold;
-  font-size: 1.1rem;
+  color: var(--global-theme-color);
+  font-size: 1.2rem;
 }
 
 .news-content{
@@ -187,6 +187,7 @@ p.contact{
 }
 .news table td {
   font-size: 1rem;
+  line-height: 1.6;
   color: var(--global-text-color);
 }
 
@@ -331,6 +332,10 @@ footer.sticky-bottom {
     padding-right: 0;
     padding-left: 20px;
   }
+}
+
+h3.card-title{
+  color: #1b1f23 !important;
 }
 
 

@@ -1,5 +1,6 @@
 <div class="news">
   <h2>news</h2>
+    <hr>
   {% if site.news  %}
     <div class="table-responsive">
       <table class="table table-sm table-borderless">
@@ -10,11 +11,12 @@
           <td>
               <div class="news-date">{{ item.date | date: "%b %-d, %Y" }}</div>
             {% if item.inline %}
-              <div class="news-title">{{item.title}}</div>
-              <div class="news-content">{{ item.content | remove: '<p>' | remove: '</p>' | emojify }}</div>
+              <div class="news-title pb-1">{{item.title}}</div>
+              <div class="news-content pb-3">{{ item.content | remove: '<p>' | remove: '</p>' | emojify }}</div>
             {% else %}
-              <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+              <a class="news-title pb-3" href="{{ item.url | relative_url }}">{{ item.title }}</a>
             {% endif %}
+              <hr>
           </td>
         </tr>
       {% endfor %}
