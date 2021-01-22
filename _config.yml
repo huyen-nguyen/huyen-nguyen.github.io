@@ -83,7 +83,7 @@ pagination:
   enabled: true
 
 # Comments
-disqus_shortname: huyen-nguyen-github-io # put your disqus shortname
+disqus_shortname: hn-io # put your disqus shortname
 
 # -----------------------------------------------------------------------------
 # Collections
