@@ -8,8 +8,8 @@ middle_name: N.
 last_name: Nguyen
 email:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Hi! It's Huyen. Welcome to my page :) I'm a PhD student who loves visualization and lucky enough to do research in
-  visualization as well.
+  Hi! It's Huyen. I'm a CS PhD student who loves visualization and lucky enough to do research in
+  visualization as well. Welcome to my page :)
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with
   <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme ♡
@@ -61,14 +61,6 @@ contact_note: >
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
-
-
-# -----------------------------------------------------------------------------
-# Bio
-# -----------------------------------------------------------------------------
-
-bio_name: bio  # your blog must have a name for it to show up in the nav bar
-bio_description: My current role and background
 
 
 # -----------------------------------------------------------------------------

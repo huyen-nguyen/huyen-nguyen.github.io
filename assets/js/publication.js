@@ -9,7 +9,7 @@ function listPapers(mainContain, featured) {
         .append("a").attr("class", "anchorPaperImage")
         .attr('href', d => getPDF(featured, d.pdf))
         .append('img').attr("class", "paperImage")
-        .attr('src', d => featured ? "assets/" + d.image : "assets/" + d.image).attr('width', 190).attr('height', 110);
+        .attr('src', d => featured ? "assets/" + d.image : "../assets/" + d.image).attr('width', 190).attr('height', 110);
 
     publicationArea.append('th').attr("class", "paperDetail").attr('width', '85%')
         .html(d => `
@@ -26,6 +26,7 @@ function listPapers(mainContain, featured) {
                         ${d.bib !== '' ? `<a href="${featured ? d.bib : "../" + d.bib}"> <i class="fas fa-book" aria-hidden="true"></i> BibTex</a>
                         <br><br>` : ''}`);
 
+
     function arraytoAuthor(a) {
         var lasta = a.pop();
         if (a.length) {
@@ -40,8 +41,8 @@ function listPapers(mainContain, featured) {
 
     function getPDF(featured, pdf) {
         if ((pdf.startsWith("papers/")) && (!featured)) {
-            return "../" + pdf
-        } else return pdf
+            return "../assets/" + pdf
+        } else return "assets/"+pdf
     }
 
     function getVenue(featured, venue) {
@@ -52,7 +53,8 @@ function listPapers(mainContain, featured) {
 
 
 function publications() {
-    d3.tsv("assets/data/publications.tsv", function (error, data_) {
+    d3.tsv("../assets/data/publications.tsv", function (error, data_) {
+        console.log("pub")
         if (error) throw error;
 
         var minYear = 2018;

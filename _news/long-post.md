@@ -2,7 +2,7 @@
 layout: post
 title: VAST Challenge 2020 Honorable Mention 
 date: 2020-08-15 16:11:00-0400
-inline: true
+inline: false
 published: false
 ---
 

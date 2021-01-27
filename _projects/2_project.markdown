@@ -7,7 +7,9 @@ importance: 2
 selected: true
 ---
 
-<p class="card-text">Earthquake Situational Analytics from social media, supporting users to characterize the condition across the earthquake zone: related events, resources, and responses from the community.
+<p class="card-text">Earthquake Situational Analytics dashboard, utilizing WordStream and interactive 
+visualizations for social media to support characterizing 
+conditions in earthquake zone: events, resources, and responses from community.
 </p>
 
 <p class="card-text">

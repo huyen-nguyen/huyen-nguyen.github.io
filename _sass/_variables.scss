@@ -6,8 +6,8 @@
 
 
 // Colors
-$red-color:           #FF0000 !default;
-$red-color-dark:      #aa0626 !default;
+$red-color-dark: #a20022 !default;
+$light-red-color:     lighten($red-color-dark, 30%) !default;
 $orange-color:        #F29105 !default;
 $blue-color:          #0076df !default;
 $blue-color-dark:     #00369f !default;
@@ -23,9 +23,11 @@ $light-purple-color:  lighten($purple-color, 25%);
 $pink-color:          #f92080 !default;
 $pink-color-light:    #ffdddd !default;
 $yellow-color:        #efcc00 !default;
-$brown-vis:           #7f6c5e !default;
+$brown-vis-dark:      #7f6c5e !default;
+$brown-vis-light:     #b28f77 !default;
+$card-dark:           #34393d !default;
 
-$grey-color:          #828282 !default;
+$grey-color: #636363 !default;
 $grey-color-light:    lighten($grey-color, 40%);
 $grey-color-dark:     darken($grey-color, 25%);
 
