@@ -25,18 +25,19 @@ layout: default
             <header class="post-header pt-1">
                 <h1 class="post-title">
                     {% if site.title == blank %}{{ site.title }}{% else %}<span
-                        class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%
+                        class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name
+                    }}{%
                     endif %}
                 </h1>
                 <p class="desc">{{ page.description }}</p>
-<!--                <p class="contact pb-2">-->
-<!--                    <span><i class="far fa-envelope"></i> huyen.nguyen (at) ttu.edu</span>-->
-<!--                    <a href="https://scholar.google.com/citations?user=tsrO-ZgAAAAJ&hl=en"><i-->
-<!--                            class="fas fa-graduation-cap"></i> Scholar </a>-->
-<!--                    <a href="https://www.linkedin.com/in/huyen-n-nguyen/"><i class="fab fa-linkedin"></i> LinkedIn</a>-->
-<!--                    <a href="https://twitter.com/huyendoesstuff"><i class="fab fa-twitter"></i> Twitter</a>-->
-<!--                    <a href="https://github.com/huyen-nguyen"><i class="fab fa-github"></i> GitHub </a>-->
-<!--                </p>-->
+                <!--                <p class="contact pb-2">-->
+                <!--                    <span><i class="far fa-envelope"></i> huyen.nguyen (at) ttu.edu</span>-->
+                <!--                    <a href="https://scholar.google.com/citations?user=tsrO-ZgAAAAJ&hl=en"><i-->
+                <!--                            class="fas fa-graduation-cap"></i> Scholar </a>-->
+                <!--                    <a href="https://www.linkedin.com/in/huyen-n-nguyen/"><i class="fab fa-linkedin"></i> LinkedIn</a>-->
+                <!--                    <a href="https://twitter.com/huyendoesstuff"><i class="fab fa-twitter"></i> Twitter</a>-->
+                <!--                    <a href="https://github.com/huyen-nguyen"><i class="fab fa-github"></i> GitHub </a>-->
+                <!--                </p>-->
             </header>
 
             <article>
@@ -62,7 +63,7 @@ layout: default
             {% endif %}
 
             {% if page.selected_papers %}
-            {% include selected_papers.html %}
+            {% include selected_publications.html %}
             {% endif %}
 
             {% if page.social %}
