@@ -50,10 +50,15 @@ a, table.table a {
 
   .address {
     margin-bottom: 5px;
-    margin-top: 23px;
+    margin-top: 21px;
     //font-family: monospace;
     font-size: 1rem;
     text-align: center;
+
+    a{
+      color: var(--global-text-color);
+      padding: 0 0.3rem;
+    }
 
     p {
       display: inline-block;
@@ -101,6 +106,10 @@ p.contact {
 
 
 // Navbar customization
+
+.my-name{
+  transition: 1s;
+}
 
 .navbar {
   box-shadow: none;
@@ -226,6 +235,9 @@ p.contact {
 .news table td {
   font-size: 1rem;
   color: var(--global-text-color);
+  hr {
+    margin: 0;
+  }
 }
 
 .news table th {

@@ -6,7 +6,10 @@ description: me in 3 pages
 nav: true
 ---
 
-<a href="../resume/HuyenNguyen-Resume.pdf" target="_blank">One-page Résumé <i class="fas fa-external-link-alt"></i></a>
+<span class="pr-4"><a href="HuyenNguyen-CV.pdf" target="_blank">This CV 
+<i class="fas fa-external-link-alt"></i></a></span>•
+<span class="pl-4"><a href="../resume/HuyenNguyen-Resume.pdf" target="_blank">One-page Résumé 
+<i class="fas fa-external-link-alt"></i></a></span>
 
 <div class='embed-responsive' style='padding-bottom:80%'>
 <object

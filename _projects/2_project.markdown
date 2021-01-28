@@ -7,8 +7,8 @@ importance: 2
 selected: true
 ---
 
-<p class="card-text">Earthquake Situational Analytics dashboard, utilizing WordStream and interactive 
-visualizations for social media to support characterizing 
+<p class="card-text">Earthquake Situational Analytics dashboard, utilizing <a href="https://idatavisualizationlab.github.io/WordStream/index.html">WordStream</a> and interactive 
+visualizations to support characterizing 
 conditions in earthquake zone: events, resources, and responses from community.
 </p>
 

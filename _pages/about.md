@@ -9,6 +9,13 @@ profile:
   image: Huyen-c.jpeg
   address: >
       <p>huyen.nguyen (at) ttu.edu</p>
+      <a href="https://scholar.google.com/citations?user=tsrO-ZgAAAAJ&hl=en">
+      <i class="ai ai-google-scholar-square"></i> Scholar</a>
+      <a href="https://github.com/huyen-nguyen">
+          <i  class="fab fa-github"></i> GitHub</a>                         
+      <a href="https://twitter.com/huyendoesstuff"><i class="fab fa-twitter"></i>
+        Twitter</a>
+
 
 news: true  # includes a list of news items
 projects: true
@@ -23,11 +30,10 @@ research in interactive data visualization and visual analytics. I'm a member of
   Tommy Dang](http://www.myweb.ttu.edu/tnhondan/).
 
 
-  My research interests include interactive data
-  visualization, visual analytics and human-computer interaction (HCI), supporting the
+  My research interests include visualization, visual analytics and human-computer interaction (HCI), supporting the
   understanding and insight discovery of data. I develop web-based interactive
   visualization with [D3.js]((https://d3js.org/)) and I study to construct a template
-  for event  detection mechanisms in time-series data.
+  for event  detection mechanisms in time-series data. Details are in my <a href="cv/HuyenNguyen-CV.pdf">CV</a>.
   
 <!---Before pursuing the PhD program, I received a Bachelor's Degree in Information Systems at [Hanoi University of 
 Science
@@ -36,5 +42,19 @@ Science
     --->
   
 
-Besides my professional activities, I play the ukulele, love walking and hiking in beautiful places. I 
-trekked Mount Fansipan, Vietnam's highest mountain (3,143 m / 10,312 ft) ⛰️ in 2018.
+In 2018, I received my B.S. in Information Systems from <a href="https://en.hust.edu.vn/">Hanoi University of Science
+ and Technology</a>, where I started with computer vision problems in object detection and object proposal generation.
+
+<!---
+<a href="https://scholar.google.com/citations?user=tsrO-ZgAAAAJ&hl=en">
+<i class="ai ai-google-scholar-square"></i> Scholar</a>
+
+<a href="https://github.com/huyen-nguyen">
+    <i  class="fab fa-github"></i>GitHub</a>
+                                
+<a href="https://twitter.com/huyendoesstuff"><i class="fab fa-twitter"></i>
+  Twitter</a>
+  
+<a href="https://www.linkedin.com/in/huyen-n-nguyen"><i
+      class="fab fa-linkedin"></i> LinkedIn</a>
+---->

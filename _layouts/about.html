@@ -8,11 +8,13 @@ layout: default
         <div class="col-sm-3">
             {% if page.profile %}
             <div
-                    class="profile float-{% if page.profile.align == 'left' %}left{% else %}right pr-4 pl-4 pb-1 pt-3{% endif %}">
+                    class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
                 {% if page.profile.image %}
-                <img class="img-fluid"
-                     src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}">
-                {% endif %}
+                <div class="pr-3 pl-3 pt-3">
+                    <img class="img-fluid"
+                         src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}">
+                </div>
+                 {% endif %}
                 {% if page.profile.address %}
                 <div class="address">
                     {{ page.profile.address }}

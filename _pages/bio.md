@@ -18,6 +18,7 @@ develop web-based interactive vis using D3.js, supporting the understanding and 
 quantitative and qualitative data. I'm learning to build a template for event detection mechanisms in
 visualizing time-series data.
 
+Besides my professional activities, I play the ukulele, love walking and hiking in beautiful places. I trekked Mount Fansipan, Vietnam’s highest mountain (3,143 m / 10,312 ft) ⛰️ in 2018.
 
 <h3 class="mt-5 mb-3">background</h3>
 

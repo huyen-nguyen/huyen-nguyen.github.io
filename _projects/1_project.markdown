@@ -8,9 +8,9 @@ importance: 1
 selected: true
 ---
 
-<p class="card-text">An interactive visual analytics system, supporting Misclassification
+<p class="card-text">An interactive visual analytics system for Misclassification
     Correction and
-Analysis on object detection result.</p>
+Analysis on machine learning result.</p>
 <p class="card-text">
     <span class="pr-3"><a
         href="https://github.com/huyen-nguyen/VAST2020mc2">GitHub</a></span>
