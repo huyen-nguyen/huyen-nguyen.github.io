@@ -1,6 +1,6 @@
 ---
 layout: post
-title: about the site
+title: inspirations for the site
 date: 2021-01-20 21:01:00
 description: inspiration and acknowledgement
 comments: true
