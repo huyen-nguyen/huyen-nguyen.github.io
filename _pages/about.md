@@ -15,6 +15,7 @@ profile:
           <i  class="fab fa-github"></i> GitHub</a>                         
       <a href="https://twitter.com/huyendoesstuff"  target="_blank"><i class="fab fa-twitter"></i>
         Twitter</a>
+      
 
 
 news: true  # includes a list of news items
@@ -25,15 +26,15 @@ social: false  # includes social icons at the bottom of the page
 
 <!---Ph.D. Student in Computer Science • <a target="_blank" href="https://www.ttu.edu/">Texas Tech</a>--->
 
-Hi! I'm a PhD student in Computer Science at [Texas Tech University](https://www.ttu.edu/), doing 
-research in interactive data visualization and visual analytics. I'm a member of the  [interactive Data Visualization Lab (iDVL)](https://idatavisualizationlab.github.io/), where I work with [Prof.
-  Tommy Dang](http://www.myweb.ttu.edu/tnhondan/).
+Hi! I'm a Computer Science PhD student at [Texas Tech University](https://www.ttu.edu/), advised by [Prof. Tommy 
+Dang](http://www.myweb.ttu.edu/tnhondan/).
 
-
-  My research interests include visualization, visual analytics and human-computer interaction (HCI), supporting the
-  understanding and insight discovery of data. I develop web-based interactive
+  My research interests include interactive visualization, visual analytics and human-computer interaction (HCI), 
+  supporting the
+  understanding and insight discovery of data. In 
+  [interactive Data Visualization Lab (iDVL)](https://idatavisualizationlab.github.io/), I develop web-based interactive
   visualization with [D3.js]((https://d3js.org/)) and I study to construct a template
-  for event  detection mechanisms in time-series data. Details are in my <a href="cv/HuyenNguyen-CV.pdf">CV</a>.
+  for event  detection mechanisms in time-series data. Details are in my <a href="cv/HuyenNguyen-CV.pdf">CV</a>. 
   
 <!---Before pursuing the PhD program, I received a Bachelor's Degree in Information Systems at [Hanoi University of 
 Science
