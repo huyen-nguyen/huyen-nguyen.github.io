@@ -2,7 +2,7 @@
 layout: page
 permalink: /cv/
 title: cv
-description: me in 3 pages
+description: me in a few pages
 nav: true
 ---
 

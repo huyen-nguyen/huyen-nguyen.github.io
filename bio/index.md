@@ -3,7 +3,6 @@ layout: side
 permalink: /bio/
 title: bio
 description: my current role and background
-nav: true
 ---
 
 I am currently a PhD student in Computer Science, <a href="https://www.depts.ttu.edu/coe/">Edward E.
@@ -28,12 +27,14 @@ Before pursuing the PhD program at Texas Tech, I earned a Bachelor's Degree in I
     Nguyen in the Knowledge and Data Engineering Lab (now known as Data Science Lab) on problems in
     computer vision such as object detection and object proposal generation.
 
+
 I got interested in image processing after attending Dr. Nguyen's Multimedia Database Systems class
     in 2017 and started working with her since. The first topic that got me hooked was keypoint
     extraction using SIFT, implemented with <a href="https://opencv.org/">OpenCV library</a>. We then
     reviewed superpixelation and selective search methods for object segmentation proposals, inspired by
     <a href="http://www.ee.oulu.fi/~jkannala/publications/cvpr2014a.pdf">Rantalankila et al.</a>'s paper
     on generating proposals using global and local search.
+
 
 Towards my graduation, we moved on with deep learning techniques using convolutional neural networks
 for multi-label image classification. I completed my final thesis on training an object detection
