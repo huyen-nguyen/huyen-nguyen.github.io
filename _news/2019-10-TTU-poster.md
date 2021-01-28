@@ -6,4 +6,5 @@ title: Scientific Computing meets Machine Learning and Life Sciences Workshop Po
 ---
 
 The poster is about Interactive Visualization for Earthquake Analysis from Social Media Data, presented in the 
-[workshop held at TTU](http://www.math.ttu.edu/scmlls2019/).
+[workshop held at TTU](http://www.math.ttu.edu/scmlls2019/).<br>
+[[Poster]](assets/papers/2019-EQSA-Talk.pdf)

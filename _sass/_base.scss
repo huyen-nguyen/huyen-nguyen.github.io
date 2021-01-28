@@ -58,6 +58,7 @@ a, table.table a {
     a{
       color: var(--global-text-color);
       padding: 0 0.3rem;
+      white-space: nowrap;
     }
 
     p {
@@ -83,6 +84,9 @@ p.contact {
     width: 100%;
 
     .address {
+      br {
+        display: none !important;
+      }
       p {
         display: block;
       }

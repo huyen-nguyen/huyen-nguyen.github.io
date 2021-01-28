@@ -41,10 +41,11 @@
                     {% assign sorted_pages = site.pages | sort: "title" %}
                     {% for p in sorted_pages %}
                     {% if p.nav and p.autogen == nil %}
-                    <li class="nav-item {% if page.title == p.title %}active{% endif %}">
+                    <li class="nav-item {% if page.title == p.title or page.url contains p.title%}active{% endif %}">
                         <a class="nav-link" href="{{ p.url | relative_url }}">
                             {{ p.title }}
-                            {% if page.title == p.title %}
+                            {% if page.title == p.title or page.url contains p.title %}
+                            <script>console.log("{{ page.url }}, {{ p.title }}")</script>
                             <span class="sr-only">(current)</span>
                             {% endif %}
                         </a>
@@ -56,12 +57,12 @@
                     <!--    Social media      -->
 
                     <li class="nav-item">
-                        <a class="nav-link" href="https://scholar.google.com/citations?user=tsrO-ZgAAAAJ&hl=en"><i
+                        <a class="nav-link" href="https://scholar.google.com/citations?user=tsrO-ZgAAAAJ&hl=en"  target="_blank"><i
                                 class="ai ai-google-scholar-square"></i></a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/huyen-nguyen"><i
+                        <a class="nav-link" href="https://github.com/huyen-nguyen"  target="_blank"><i
                                 class="fab fa-github"></i></a>
                     </li>
 

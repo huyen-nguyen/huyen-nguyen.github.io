@@ -7,5 +7,6 @@ link: https://idatavisualizationlab.github.io/20200817-VASTHuyen.html
 ---
 
 Huyen and Team won the Honorable Mention for VAST 2020 [Mini-challenge 2](https://vast-challenge.github.io/2020/MC2.html): Applying visual 
-analytics for misclassification correction and analysis in object detection.
+analytics for misclassification correction and analysis in object detection.<br>
+[[Awarded Report]](https://huyen-nguyen.github.io/VAST2020mc2/TTU-Nguyen-MC2/)
 

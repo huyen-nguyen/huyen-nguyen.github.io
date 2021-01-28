@@ -8,12 +8,12 @@ profile:
   align: right
   image: Huyen-c.jpeg
   address: >
-      <p>huyen.nguyen (at) ttu.edu</p>
-      <a href="https://scholar.google.com/citations?user=tsrO-ZgAAAAJ&hl=en">
+      <p>huyen.nguyen (at) ttu.edu</p><br>
+      <a href="https://scholar.google.com/citations?user=tsrO-ZgAAAAJ&hl=en"  target="_blank">
       <i class="ai ai-google-scholar-square"></i> Scholar</a>
-      <a href="https://github.com/huyen-nguyen">
+      <a href="https://github.com/huyen-nguyen"  target="_blank">
           <i  class="fab fa-github"></i> GitHub</a>                         
-      <a href="https://twitter.com/huyendoesstuff"><i class="fab fa-twitter"></i>
+      <a href="https://twitter.com/huyendoesstuff"  target="_blank"><i class="fab fa-twitter"></i>
         Twitter</a>
 
 
@@ -41,9 +41,9 @@ Science
     in the Knowledge and Data Engineering Lab on object detection and object proposal generation.)
     --->
   
-
 In 2018, I received my B.S. in Information Systems from <a href="https://en.hust.edu.vn/">Hanoi University of Science
- and Technology</a>, where I started with computer vision problems in object detection and object proposal generation.
+ and Technology</a>, where I started with computer vision problems in object detection and object proposal 
+ generation.
 
 <!---
 <a href="https://scholar.google.com/citations?user=tsrO-ZgAAAAJ&hl=en">
