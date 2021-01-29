@@ -37,13 +37,18 @@
 
 <!-- JQuery -->
 {% include scripts/jquery.html %}
-
+{% include collecttags.html %}
 <!-- Theming-->
 {% if site.enable_darkmode %}
   <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
   <!-- Load DarkMode JS -->
 <script src="{{ '/assets/js/dark_mode.js' | relative_url }}"></script>
 {% endif %}
+
+<!-- Tagging -->
+<!--{% if site.tags != "" %}-->
+<!--  {% include collecttags.html %}-->
+<!--{% endif %}-->
 
 {% if site.enable_google_analytics %}
   <!-- Global site tag (gtag.js) - Google Analytics -->

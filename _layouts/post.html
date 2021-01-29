@@ -15,7 +15,16 @@ layout: default
     <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
 
-  <article class="post-content">
+<!--  Tags  -->
+  <p>Tags:
+  {% for tag in page.tags %}
+    {% capture tag_name %}{{ tag }}{% endcapture %}
+    <a class="p-1" href="/tag/{{ tag_name }}"><code class="highligher-rouge tags"><nobr>{{ tag_name }}</nobr></code></a>
+  {% endfor %}
+    &nbsp;&nbsp;
+  </p>
+
+  <article class="post-content col-lg-9 p-0 mb-5 mt-5">
     {{ content }}
   </article>
 

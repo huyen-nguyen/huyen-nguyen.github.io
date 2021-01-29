@@ -309,13 +309,26 @@ footer.fixed-bottom {
 
 footer.sticky-bottom {
   border-top: 1px solid $grey-color-light;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 0.9rem;
 }
 
 
 // Blog
+
+.tags {
+  background: rgba(226, 226, 226, 0.3);
+  padding: 5px 5px;
+  /* margin-right: 1rem; */
+  margin: 0;
+  line-height: 1;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  border-radius: 0.6rem;
+
+}
+
 
 .header-bar {
   border-bottom: 1px solid $grey-color-light;
