@@ -10,7 +10,7 @@ layout: default
             <div
                     class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
                 {% if page.profile.image %}
-                <div class="pr-3 pl-3 pt-3">
+                <div class="pr-4 pl-4 pt-3">
                     <img class="img-fluid"
                          src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}">
                 </div>
@@ -45,7 +45,7 @@ layout: default
 
             <article>
 
-                <div class="clearfix">
+                <div class="clearfix about-me">
                     {{ content }}
                 </div>
 

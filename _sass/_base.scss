@@ -44,20 +44,24 @@ a, table.table a {
 
 // Profile
 
+.about-me {
+  padding-right: unset;
+}
+
 .profile {
   margin-left: 1rem;
   width: 100%;
 
   .address {
     margin-bottom: 5px;
-    margin-top: 17px;
+    margin-top: 21px;
     //font-family: monospace;
     font-size: 1rem;
     text-align: center;
 
     a{
       color: var(--global-text-color);
-      padding: 0 0.1rem;
+      padding: 0 0.2rem;
       white-space: nowrap;
     }
 
@@ -80,6 +84,9 @@ p.contact {
 }
 
 @media (min-width: 576px) {
+  .about-me {
+    padding-right: 2.3rem;
+  }
   .profile {
     width: 100%;
 
@@ -212,8 +219,9 @@ p.contact {
 }
 
 .news-date {
-  color: var(--global-icon-color);
-  font-size: 0.9rem;
+  color: $grey-color;
+  font-size: 0.875rem;
+  margin-bottom: 0;
 }
 
 .news-title {
@@ -403,12 +411,12 @@ footer.sticky-bottom {
       width: 100%;
     }
     .card-body .card-text {
-      font-size: .9rem;
-      font-weight: 400;
+      font-size: 1rem;
       color: var(--global-text-color);
       span{
         a{
           color: var(--global-vis-color);
+          font-size: 0.9rem;
         }
       }
     }
