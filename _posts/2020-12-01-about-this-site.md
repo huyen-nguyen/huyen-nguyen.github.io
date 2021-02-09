@@ -2,7 +2,7 @@
 layout: post
 title: about this site
 date: 2020-12-1 21:01:00
-description: reasons for this site and inspirations
+description: reasons for this site and its inspirations
 tags: blog jekyll
 comments: true
 ---

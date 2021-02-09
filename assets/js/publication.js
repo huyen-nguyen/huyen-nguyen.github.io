@@ -1,5 +1,3 @@
-console.log("hi pubs")
-
 function listPapers(mainContain, featured) {
     var publicationArea = mainContain.selectAll('div.pubYear').selectAll('div.publicationArea').data(d => d.values)
         .enter().append('div').attr('class', 'publicationArea')
@@ -54,7 +52,6 @@ function listPapers(mainContain, featured) {
 
 function publications() {
     d3.tsv("../assets/data/publications.tsv", function (error, data_) {
-        console.log("pub")
         if (error) throw error;
 
         var minYear = 2018;
