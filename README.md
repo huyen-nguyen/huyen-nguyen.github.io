@@ -1,8 +1,6 @@
 # huyen-nguyen.github.io
 *Hey! It's the bio/blog site I've been longing to build!*
 
-https://huyen-nguyen.github.io/
-
 ## How to run
 0\. Make sure all dependencies in your Gemfile are available to the application (if run on `bundle`)
 
