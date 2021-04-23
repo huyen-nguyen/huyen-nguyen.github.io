@@ -2,6 +2,6 @@
 layout: publications
 permalink: /publications/
 title: publications
-description: what is life, anyway
+description: my research in visualization, visual analytics and human-computer interaction
 nav: true
 ---

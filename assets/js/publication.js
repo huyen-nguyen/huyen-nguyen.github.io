@@ -37,10 +37,28 @@ function listPapers(mainContain, featured) {
         return authors.replace("Huyen Nguyen", "<b>Huyen N. Nguyen</b>");
     }
 
+    // function getPDF(featured, pdf) {
+    //     if ((pdf.startsWith("papers/")) && (!featured)) {
+    //         console.log("feature + local")
+    //         return "../assets/" + pdf
+    //     } else {
+    //         console.log("feature + online")
+    //         return "assets/"+pdf
+    //     }
+    // }
+
     function getPDF(featured, pdf) {
-        if ((pdf.startsWith("papers/")) && (!featured)) {
+        if ((pdf.startsWith("papers/")) && (!featured)) {            // local + not feature
+            console.log("feature + local")
             return "../assets/" + pdf
-        } else return "assets/"+pdf
+        } else if ((pdf.startsWith("papers/")) && (featured)) {      // local + feature
+            console.log("feature + online")
+            return "assets/"+pdf
+        }
+        else {                                                          // online
+            return pdf
+        }
+
     }
 
     function getVenue(featured, venue) {
