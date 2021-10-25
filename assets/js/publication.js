@@ -1,30 +1,34 @@
-console.log("hi pubs")
-
 function listPapers(mainContain, featured) {
     var publicationArea = mainContain.selectAll('div.pubYear').selectAll('div.publicationArea').data(d => d.values)
-        .enter().append('div').attr('class', 'publicationArea')
-        .append('table').style('width', '100%').style('margin-left', () => (featured) ? '0px' : '20px')
-        .append('tr');
-    publicationArea.append('th').attr("class", "th-image").attr('width', '15%')
+        .enter().append('div').attr('class', 'row')
+        // .append('table').style('width', '100%').style('margin-left', () => (featured) ? '0px' : '20px')
+        // .append('tr');
+
+    publicationArea.append('div')
+		.attr("class", "publicationImage col-sm-3")
         .append("a").attr("class", "anchorPaperImage")
         .attr('href', d => getPDF(featured, d.pdf))
         .append('img').attr("class", "paperImage")
-        .attr('src', d => featured ? "assets/" + d.image : "../assets/" + d.image).attr('width', 190).attr('height', 110);
+        .attr('src', d => featured ? "assets/" + d.image : "../assets/" + d.image);
 
-    publicationArea.append('th').attr("class", "paperDetail").attr('width', '85%')
+    publicationArea.append('div')
+		.attr("class", "paperDetail col-sm-9")
         .html(d => `
-                        <h5><a class="paperTitle non-deco" href="${getPDF(featured, d.pdf)}">${d.Title}</a></h5>
-                        <p>${highlightH(arraytoAuthor(d.Authors))}</p>
-                        <p class="venue">${d.doi !== '' ? `<a href="${d.doi}">${getVenue(featured, d.Venue)} </a>` : getVenue(featured, d.Venue)}</p>
-                        <p class="award"> ${d.Award !== '' ? `<i class="fas fa-award" style="color: #ed9f04; font-weight: bold"></i> ${d.Award}<br>` : ''}</p>
-                        ${d.pdf !== '' ? `<a href="${getPDF(featured, d.pdf)}"><i class="far fa-file-pdf" aria-hidden="true"></i> PDF</a>` : ''}
-                        ${d.doi !== '' ? `<a href="${d.doi}"><i class="fas fa-link" aria-hidden="true"></i> DOI</a>` : ''}
-                        ${d.video !== '' ? `<a href="${d.video}"><i class="fas fa-film" aria-hidden="true"></i></i> Video</a>` : ''}
-                        ${d.github !== '' ? `<a href="${d.github}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>` : ''}
-                        ${d.Demo !== '' ? `<a href="${d.Demo}"><i class="far fa-play-circle" aria-hidden="true"></i> Demo</a>` : ''}
-                        ${d.Example !== '' ? `<a href="${d.Example}"><i class="fas fa-th" aria-hidden="true"></i> Examples</a>` : ''}
-                        ${d.bib !== '' ? `<a href="${featured ?"assets/" + d.bib : "../assets/" + d.bib}"> <i class="fas fa-book" aria-hidden="true"></i> BibTex</a>
-                        <br><br>` : ''}`);
+                        <a class="title" href="${getPDF(featured, d.pdf)}">${d.Title}</a>
+                        <div>${highlightH(arraytoAuthor(d.Authors))}</div>
+                        <div class="venue">${getVenue(featured, d.Venue)}</div>
+                        <div class="award"> ${d.Award? `🏆 ${d.Award}` : ''}</div>
+
+						<div class="helper">
+                        ${d.pdf !== '' ? `[ <a href="${getPDF(featured, d.pdf)}"> PDF</a>` : ''}
+                        ${d.doi !== '' ? ` | <a href="${d.doi}"> DOI</a>` : ''}
+                        ${d.video !== '' ? ` | <a href="${d.video}"> Video</a>` : ''}
+                        ${d.github !== '' ? ` | <a href="${d.github}"> GitHub</a>` : ''}
+                        ${d.Demo !== '' ? ` | <a href="${d.Demo}"> Demo</a>` : ''}
+                        ${d.Example !== '' ? ` | <a href="${d.Example}"> Examples</a>` : ''}
+                        ${d.bib !== '' ? ` | <a href="${featured ?"assets/" + d.bib : "../assets/" + d.bib}"> BibTex</a>` : ''} ]</div>`)
+	;
+
 
 
     function arraytoAuthor(a) {
@@ -36,13 +40,20 @@ function listPapers(mainContain, featured) {
     }
 
     function highlightH(authors) {
-        return authors.replace("Huyen Nguyen", "<b>Huyen N. Nguyen</b>");
+        // return authors.replace("Huyen Nguyen", "Huyen N. Nguyen");
+		return authors.replace("Huyen Nguyen", "<u>Huyen N. Nguyen</u>");
     }
 
     function getPDF(featured, pdf) {
-        if ((pdf.startsWith("papers/")) && (!featured)) {
+        if ((pdf.startsWith("papers/")) && (!featured)) {            // local + not feature
             return "../assets/" + pdf
-        } else return "assets/"+pdf
+        } else if ((pdf.startsWith("papers/")) && (featured)) {      // local + feature
+            return "assets/"+pdf
+        }
+        else {                                                          // online
+            return pdf
+        }
+
     }
 
     function getVenue(featured, venue) {
@@ -54,9 +65,9 @@ function listPapers(mainContain, featured) {
 
 function publications() {
     d3.tsv("../assets/data/publications.tsv", function (error, data_) {
-        console.log("pub")
         if (error) throw error;
 
+        console.log("Vai lan don dua")
         var minYear = 2018;
 
         datapub = data_.filter(d => new Date(d.Time).getFullYear() >= minYear);
@@ -108,20 +119,17 @@ function featuredPublications() {
         });
         let featuredData = datapub.filter(d => parseInt(d.Highlight) > 0).sort((a, b) => a.Highlight - b.Highlight);
 
-        featuredNestPaper(featuredData);
-    });
-}
+		var dataByYear = d3.nest().key(k => Number.isInteger(parseInt(k.Highlight))).entries(featuredData);
 
-function featuredNestPaper(data) {
-    var dataByYear = d3.nest().key(k => Number.isInteger(parseInt(k.Highlight))).entries(data);
+		// append pubs by year
+		var mainContain = d3.select('#featuredPaperContainer');
+		var yearContain_i = mainContain.selectAll('div.pubYear').data(dataByYear, d => d.key);
 
-    // append pubs by year
-    var mainContain = d3.select('#featuredPaperContainer');
-    var yearContain_i = mainContain.selectAll('div.pubYear').data(dataByYear, d => d.key);
+		yearContain_i.exit().remove();
+		var yearContain = yearContain_i
+			.enter().append('div').attr('class', 'pubYear');
 
-    yearContain_i.exit().remove();
-    var yearContain = yearContain_i
-        .enter().append('div').attr('class', 'pubYear');
+		listPapers(mainContain, true)
 
-    listPapers(mainContain, true)
+	});
 }

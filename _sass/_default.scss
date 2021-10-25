@@ -1,0 +1,151 @@
+/*
+  Site container
+*/
+
+.container {
+  //width: 700px;
+  margin: 2.5rem auto;
+  background: #fff;
+  max-width: 1000px;
+  border-radius: 5px;
+  padding: 6px 35px;
+}
+
+.content-container {
+  margin-bottom: 4rem;
+}
+
+/*48em*/
+
+@media screen and (min-width: 701px) {
+  body {
+	font-size: 0.95rem;
+  }
+  .container {
+	margin: 2.5rem auto;
+	background: #fff;
+	max-width: 1000px;
+	border-radius: 5px;
+	padding: 6px 35px;
+  }
+}
+
+//
+@media screen and (max-width: 700px) {
+  body {
+	font-size: 0.9rem;
+  }
+  .container {
+	margin: 0rem auto;
+	background: #fff;
+	max-width: 1000px;
+	border-radius: 5px;
+	padding: 10px;
+  }
+
+}
+
+/*
+  Header
+*/
+
+.header {
+  padding-top: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.header a:hover {
+  color: #a22a3e;
+  transition: 0.3s;
+}
+
+.header-title a {
+  //font-family: "Mulish", sans-serif;
+  font-size: 2.1rem;
+  text-decoration: none;
+  //color: #333333;
+  margin-top: 0;
+  color: #802434;
+  font-weight: 700;
+  padding-bottom: .2em;
+}
+
+.header-title a:hover{
+  color: #a22a3e;
+  transition: 0.3s;
+  opacity: 1!important;
+}
+
+.header-subtitle {
+  color: $light-gray-color;
+}
+
+/*
+  Menu
+*/
+
+.menu {
+  padding-top: 0.5rem;
+  display: inline-block;
+  float: right;
+}
+
+.menu-content {
+  float: left;
+}
+
+.menu-content a {
+  //font-family: "Mulish", sans-serif;
+  color: #2b2b2b;
+  font-size: 1rem;
+}
+
+.menu-content a:last-child{
+  margin-right: 0px !important;
+}
+
+.social-icons{
+  font-size: 1.1rem !important;
+}
+
+@media (max-width: $elements-responsive-width) {
+  .social-icons {
+    float: left;
+    padding-top: 0px;
+  }
+  .menu-content {
+    margin-bottom: 5px;
+  }
+}
+
+.page-divider {
+  border-bottom: 1px solid #ddd;
+}
+/*
+  Footer
+*/
+
+.footer {
+  color: $light-gray-color;
+  text-align: center;
+  margin: 2rem;
+}
+
+.footer a {
+  color: $light-gray-color;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: $dark-gray-color;
+}
+
+.footer-description {
+  display: block;
+  margin-top:3px;
+  margin-bottom: 1rem;
+  color: $light-gray-color;
+  font-family: $sans-serif-font-family;
+  font-size:0.8rem;
+}
