@@ -4,22 +4,17 @@ layout: default
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="{{ site.url }}{{ site.baseurl }}/assets/js/publication.js"></script>
-<script>
-	console.log("hi");
-</script>
 
 <div class="row">
 	<div class="col-sm-3">
 		<div class="info-box">
-			<img class="img-intro" src="{{ site.url }}{{ site.baseurl }}/assets/img/huyen.jpeg">
+			<img class="img-intro" src="{{ site.url }}{{ site.baseurl }}/assets/img/huyen.jpeg"/>
 			<p class="intro-text">
 				Dept. of Computer Science<br>
 				Texas Tech University<br>
 				huyen.nguyen (at) ttu.edu<br>
-				<span class="social-container">
-			{% include social-icons.html %}
-		</span>
 
+				<span class="social-container">{% include social-icons-header.html %}</span>
 			</p>
 		</div>
 	</div>
@@ -39,7 +34,9 @@ layout: default
 				understanding and insight discovery of data. I build web-based interactive
 				visualizations with <a href="https://d3js.org/">D3.js</a> and I study to construct a template
 				for event detection mechanisms in multivariate time-series data. Details are in my <a
-						href="{{ site.url }}{{ site.baseurl }}/assets/HuyenNguyen-CV.pdf" target="_blank">CV</a>.</p>
+						href="{{ site.url }}{{ site.baseurl }}/assets/HuyenNguyen-CV.pdf" target="_blank">CV</a> / <a
+						href="{{ site.url }}{{ site.baseurl }}/assets/HuyenNguyen-Resume.pdf" target="_blank">Résumé</a>
+				.</p>
 
 			<p>Since Fall 2021, I have been teaching CS2413 Data Structures Lab session for undergrad students. Looking
 				forward to
@@ -53,7 +50,7 @@ layout: default
 <div class="row">
 	<div class="col-sm-3"></div>
 	<article class="col-sm-9">
-		<div class="updates section">
+		<div class="updates ">
 			<h4>Updates</h4>
 		</div>
 	</article>
@@ -61,7 +58,8 @@ layout: default
 	<div class="row updateSection">
 		<div class="col-sm-3 dateInUpdate"><i>Jan 2022</i></div>
 		<div class="col-sm-9">I joined the STEM Center for Outreach, Research & Education (<a
-				href="https://www.depts.ttu.edu/stem/" target="_blank">STEM CORE</a>) at Texas Tech as a Graduate Student Affiliate!</b>
+				href="https://www.depts.ttu.edu/stem/" target="_blank">STEM CORE</a>) at Texas Tech as a Graduate
+			Student Affiliate!</b>
 		</div>
 	</div>
 
@@ -84,7 +82,7 @@ layout: default
 	<div class="row updateSection">
 		<div class="col-sm-3 dateInUpdate"><i>Jun 2021</i></div>
 		<div class="col-sm-9"><b>ACM Open Access</b>: <a href="https://dl.acm.org/doi/10.1145/3468784.3469851"
-												target="_blank">Interactive
+														 target="_blank">Interactive
 			Qualitative Data Visualization for Educational
 			Assessment</a>, the collaboration supported by <b>GRC - NASA Visionary Grant </b>
 		</div>

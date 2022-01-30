@@ -224,7 +224,7 @@ cite a:hover {
 }
 
 span.social-container{
-  color: #393939;
+  color: #ac1414;
 }
 
 .img-intro {
@@ -243,6 +243,10 @@ span.social-container{
 
 .section {
   margin-top: 3rem;
+}
+
+.social-icons-header{
+  display: inline-block;
 }
 
 
@@ -570,7 +574,6 @@ u {
 }
 
 
-
 @media only screen and (max-width: 577px) {
   .img-intro {
 	max-width: 150px;
@@ -578,7 +581,7 @@ u {
   .intro-text {
 	display: inline;
 	text-align: left;
-	margin: 40px 0 0 10px;
+	margin: 22px 0 0 10px;
 	position: absolute;
   }
 
