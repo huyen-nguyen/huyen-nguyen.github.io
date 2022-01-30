@@ -1,0 +1,12 @@
+<header class="header d-flex flex-column flex-md-row align-items-center border-bottom">
+  <h3 class="header-title">
+    <a href="{{ site.url }}{{ site.baseurl }}/">{{ site.title }}</a>
+  </h3>
+
+  <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto menu-content">
+    {% for item in site.data.settings.menu %}
+    <a class="me-4 py-2 text-decoration-none" href="{{ site.url }}{{ site.baseurl }}/{{ item.url }}">{{ item.name }}</a>
+    {% endfor %}
+  </nav>
+
+</header>

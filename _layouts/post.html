@@ -1,0 +1,16 @@
+---
+layout: page
+---
+
+{% if page.image and page.include_image %}
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/{{ page.image }}">
+{% endif %}
+<article>
+  {{ content }}
+</article>
+{% if site.hide_post_date != true %}
+  {% include post-date.html %}
+{% endif %}
+{% if site.data.settings.disqus.comments %}
+  {% include disqus.html %}
+{% endif %}

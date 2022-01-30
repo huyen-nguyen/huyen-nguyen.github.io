@@ -1,0 +1,36 @@
+---
+---
+
+$sans-serif-font-family: "Noto Sans", sans-serif;
+$serif-font-family:      -apple-system,system-ui,BlinkMacSystemFont, Arial,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+$code-font-family:       "Source Code Pro", monospace;
+
+$body-color:             #222;
+$link-color:             #814B38;
+
+$code-background-color:   #f5f5f5;
+$pagination-button-color: #e0e0e0;
+
+$dark-gray-color:        #333;
+$light-gray-color:       #aaa;
+$extra-light-gray-color: #ccc;
+
+$container-responsive-width: 700px;
+$mobile-responsive-width: 700px;
+$elements-responsive-width:  30em;
+
+
+$icon-transition-time: .5s;
+$envelope-color:       #f39c12;
+$twitter-color:        #00aced;
+$instagram-color:      #375989;
+$github-color: #7d1db3;
+$linkedin-color:       #0073a4;
+$facebook-color:       #3d5b99;
+$pinterest-color:      #bd081c;
+$medium-color:         #00AB6C;
+$codepen-color:        black;
+$rss-color:            #ff6600;
+$google-scholar-color: #4d90fe;
+
+@import "-sections-dir";

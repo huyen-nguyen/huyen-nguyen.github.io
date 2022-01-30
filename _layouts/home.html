@@ -1,0 +1,141 @@
+---
+layout: default
+---
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/assets/js/publication.js"></script>
+<script>
+	console.log("hi");
+</script>
+
+<div class="row">
+	<div class="col-sm-3">
+		<div class="info-box">
+			<img class="img-intro" src="{{ site.url }}{{ site.baseurl }}/assets/img/huyen.jpeg">
+			<p class="intro-text">
+				Dept. of Computer Science<br>
+				Texas Tech University<br>
+				huyen.nguyen (at) ttu.edu<br>
+				<span class="social-container">
+			{% include social-icons.html %}
+		</span>
+
+			</p>
+		</div>
+	</div>
+	<article class="col-sm-9">
+		<div class="welcome first-section">
+			<h4>Welcome!</h4>
+			<p>I’m a Computer Science Ph.D. Candidate at <a href="https://www.depts.ttu.edu/coe/">Whitacre Jr. College
+				of Engineering</a>, <a href="https://www.ttu.edu/">Texas Tech University</a>,
+				advised
+				by <a href="http://www.myweb.ttu.edu/tnhondan/">Prof. Tommy
+					Dang</a> at the <a href="https://idatavisualizationlab.github.io/">interactive Data
+					Visualization
+					Lab (iDVL)</a>.</p>
+
+			<p>I design and develop novel interactive systems in data visualization, visual analytics and HCI,
+				supporting the
+				understanding and insight discovery of data. I build web-based interactive
+				visualizations with <a href="https://d3js.org/">D3.js</a> and I study to construct a template
+				for event detection mechanisms in multivariate time-series data. Details are in my <a
+						href="{{ site.url }}{{ site.baseurl }}/assets/HuyenNguyen-CV.pdf" target="_blank">CV</a>.</p>
+
+			<p>Since Fall 2021, I have been teaching CS2413 Data Structures Lab session for undergrad students. Looking
+				forward to
+				the day I got to teach Data Visualization!
+			</p>
+		</div>
+	</article>
+</div>
+
+
+<div class="row">
+	<div class="col-sm-3"></div>
+	<article class="col-sm-9">
+		<div class="updates section">
+			<h4>Updates</h4>
+		</div>
+	</article>
+
+	<div class="row updateSection">
+		<div class="col-sm-3 dateInUpdate"><i>Jan 2022</i></div>
+		<div class="col-sm-9">I joined the STEM Center for Outreach, Research & Education (<a
+				href="https://www.depts.ttu.edu/stem/" target="_blank">STEM CORE</a>) at Texas Tech as a Graduate Student Affiliate!</b>
+		</div>
+	</div>
+
+	<div class="row updateSection">
+		<div class="col-sm-3 dateInUpdate"><i>Sep 2021</i></div>
+		<div class="col-sm-9">
+			• New paper accepted at <a
+				href="https://www.isvc.net/"
+				target="_blank">ISVC 2021</a>,
+			on 2D and 3D Visualizations for Temporal and Structural Association in High-Performance Computing
+			System.<br>
+
+			• Mentor to student under Tech Intrapreneurship Program (TIP) - Scholarships in
+			STEM (<b>S-STEM</b>).
+			Sponsored by National Science Foundation (<b>NSF</b>) and Texas Instruments (<b>TI</b>).
+
+		</div>
+	</div>
+
+	<div class="row updateSection">
+		<div class="col-sm-3 dateInUpdate"><i>Jun 2021</i></div>
+		<div class="col-sm-9"><b>ACM Open Access</b>: <a href="https://dl.acm.org/doi/10.1145/3468784.3469851"
+												target="_blank">Interactive
+			Qualitative Data Visualization for Educational
+			Assessment</a>, the collaboration supported by <b>GRC - NASA Visionary Grant </b>
+		</div>
+	</div>
+
+	<div class="row updateSection">
+		<div class="col-sm-3 dateInUpdate"><i>May 2021</i></div>
+		<div class="col-sm-9">Two new papers accepted at <a href="https://www.iait-conf.org/2021/" target="_blank">IAIT
+			2021</a>.
+			One on visualization for education and one on Explainable LSTM for Multivariate Time Series.
+		</div>
+	</div>
+
+	<div class="row updateSection">
+		<div class="col-sm-3 dateInUpdate"><i>Aug 2020</i></div>
+		<div class="col-sm-9"><b>VAST Challenge 2020 🏆 Mini-Challenge 2 Award</b>: Honorable Mention for Detailed
+			Analysis of Patterns
+			of Misclassification.
+		</div>
+	</div>
+
+	<div class="row updateSection">
+		<div class="col-sm-3 dateInUpdate"><i>Nov 2019</i></div>
+		<div class="col-sm-9"><b>NASA, Visionary Grant Award 🥇</b> administered by Gordon Research Conferences, for
+			interdisciplinary research with our project entitled “Visualizing Qualitative Data for Science and
+			Education”.
+		</div>
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="col-sm-3"></div>
+	<article class="col-sm-9">
+		<div class="publication section">
+			<h4>Featured Publications</h4>
+			<div style="color: rgba(79,80,80,0.65)">An up-to-date list is available on <a
+					href="https://scholar.google.com/citations?user=tsrO-ZgAAAAJ&hl=en" target="_blank">Google Scholar
+				<i
+						class="fas fa-external-link-alt"></i></a>
+			</div>
+		</div>
+	</article>
+</div>
+<div class="row">
+	<div id="featuredPaperContainer"></div>
+	<script>
+		featuredPublications();
+	</script>
+
+</div>
+
+
+
