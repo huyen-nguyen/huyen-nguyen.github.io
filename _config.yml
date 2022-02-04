@@ -10,7 +10,7 @@
 #   sort_field: 'date'
 #   sort_reverse: true
 
-url: https://huyennguyen.com
+#url: https://huyennguyen.com    # disable this when run local
 #baseurl: /huyenngu # disable this for huyennguyen.com
 
 # jekyll-paginate configuration
