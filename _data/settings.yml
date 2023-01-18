@@ -7,9 +7,9 @@ disqus:
 google-ID: 'UA-112060364-1'
 
 menu:
-- {name: 'Teaching', url: 'teaching/'}
-- {name: 'Résumé', url: 'docs/HuyenNguyen-Resume.pdf'}
+#- {name: 'Résumé', url: 'docs/HuyenNguyen-Resume.pdf'}
 - {name: 'CV', url: 'docs/HuyenNguyen-CV.pdf'}
+- {name: 'Teaching', url: 'teaching/'}
 - {name: 'Blog', url: 'blog/'}
 - {name: 'About',   url: 'about/'}
 #- {name: 'Contact', url: 'contact.html'}
