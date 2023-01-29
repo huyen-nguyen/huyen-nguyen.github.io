@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Learning to Love"
+title: "Learn to love"
 author: "Huyen Nguyen"
 categories: journal
 tags: [figured]
@@ -10,7 +10,7 @@ published: false
 
 <section class="main">
       <div class="mb-wrap mb-style-2">
-        <blockquote cite="http://www.gutenberg.org/ebboks/11">
+        <blockquote>
           <p>“I think you know how to love better than any of us, that’s why you find it so painful.”</p>
         </blockquote>
       </div>
@@ -44,7 +44,7 @@ weeks, you’d think you have better ways to cope with loneliness, but it turns 
 
 <section class="main">
       <div class="mb-wrap mb-style-2">
-        <blockquote cite="http://www.gutenberg.org/ebboks/11">
+        <blockquote>
           <p>“Our lovability doesn't fix loneliness, but it is something to warm us, and it is something to build ourselves up upon
 as a foundation.”</p>
         </blockquote>
