@@ -692,9 +692,9 @@ u {
 	display: inline-block;
 	padding-left: 0.4rem;
   }
-  //.updateRow {
-	//margin-top: -1rem;
-  //}
+  .updateRow {
+	margin-top: -3rem;
+  }
   .dateInUpdate {
 	i {
 	  float: right;
@@ -866,4 +866,8 @@ u {
 
 .bookname{
   color: #4e5154 !important;
+}
+
+.social-span{
+  white-space:nowrap;
 }

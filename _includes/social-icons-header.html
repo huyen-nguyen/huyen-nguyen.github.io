@@ -1,11 +1,13 @@
 {% for item in site.data.settings.social %}
 	{% assign first_char = item.academic | slice: 0 %}
 	{% if first_char == 't' %}
+		<span class="social-span">
 		<a href="{{ item.link }}" target="_blank" class="social-icons-header">{{ item.name}}<i
 				class="ai ai-{{ item.icon }}-square"
-														   aria-hidden="true"></i></a>
+														   aria-hidden="true"></i></a></span>
 	{% else %}
+		<span class="social-span">
 		<a href="{{ item.link }}" target="_blank" class="social-icons-header">{{ item.name}}<i
-				class="fab fa-{{ item.icon }}" aria-hidden="true"></i></a>
+				class="fab fa-{{ item.icon }}" aria-hidden="true"></i></a></span>
 	{% endif %}
 {% endfor %}
