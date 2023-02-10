@@ -25,7 +25,7 @@ function listPapers(mainContain, featured) {
                         ${d.video !== '' ? ` | <a href="${d.video}"> Video</a>` : ''}
                         ${d.github !== '' ? ` | <a href="${d.github}"> GitHub</a>` : ''}
                         ${d.Demo !== '' ? ` | <a href="${d.Demo}"> Demo</a>` : ''}
-                        ${d.Example !== '' ? ` | <a href="${d.Example}"> Examples</a>` : ''}
+                        ${!!d.Example ? ` | <a href="${d.Example}"> Examples</a>` : ''}
                         ${d.bib !== '' ? ` | <a href="${featured ?"assets/" + d.bib : "../assets/" + d.bib}"> BibTex</a>` : ''} ]</div>`)
 	;
 
