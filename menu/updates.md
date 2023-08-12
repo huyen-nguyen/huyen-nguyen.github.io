@@ -4,6 +4,26 @@ title: Updates
 permalink: /updates/
 ---
 <div class="row updateSection">
+	<div class="col-sm-3 dateInUpdate"><i>August 2023</i></div>
+	<div class="col-sm-9">I graduated with my Ph.D. in Computer Science from Texas Tech University 🎓✨
+	</div>
+</div>
+
+<div class="row updateSection">
+	<div class="col-sm-3 dateInUpdate"><i>July 2023</i></div>
+	<div class="col-sm-9">I presented our interdisciplinary work on Visualization for Qualitative Data at GRC 2023,
+		Lewiston, Maine. It's been 4 wonderful years working with our NASA Visionary Grant!
+	</div>
+</div>
+
+<div class="row updateSection">
+	<div class="col-sm-3 dateInUpdate"><i>June 2023</i></div>
+	<div class="col-sm-9">I successfully<b>defended my doctoral dissertation</b> in Computer Science! ✨ My
+		dissertation is titled "Interactive Visualization and Event Detection in Time-series Data."
+	</div>
+</div>
+
+<div class="row updateSection">
 		<div class="col-sm-3 dateInUpdate"><i>Jan 2023</i></div>
 		<div class="col-sm-9">I presented a Guest Lecture at University of Washington Bothell on <i>Interaction in
 			Visualization</i>. Had a great time discussing with colleagues and students on interaction and accessibility
