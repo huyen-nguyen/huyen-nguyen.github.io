@@ -6,9 +6,11 @@ permalink: /about/
 
 Hi there, I’m Huyen!
 
-I'm a computer science doctoral candidate doing research in visualization, where I find the meaning in visual
-representation helping bring data insight to life. My dissertation focuses on constructing a template for
-characterizing events in multi-dimensional time-series data.
+I’m excited to start my new position at Harvard Medical School as a postdoc! I did my Ph.D. in computer science,
+focusing on visualization research, where I find the meaning in
+visual
+representation helping bring data insight to life. My dissertation focused on interactive visualization and event
+detection in time-series data.
 
 When I'm not visualizing stuff, I like [writing](https://huyendoesstuff.github.io/){:target="_blank"} and walking. I
 also like playing the
