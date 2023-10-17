@@ -75,10 +75,11 @@ GEM
     unicode-display_width (1.7.0)
 
 PLATFORMS
+  arm64-darwin-22
   x86_64-darwin-19
 
 DEPENDENCIES
   lagrange!
 
 BUNDLED WITH
-   2.2.5
+   2.4.20
