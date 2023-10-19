@@ -53,7 +53,6 @@ function listPapers(mainContain, featured) {
         else {                                                          // online
             return pdf
         }
-
     }
 
     function getVenue(featured, venue) {
@@ -67,10 +66,9 @@ function publications() {
     d3.tsv("../assets/data/publications.tsv", function (error, data_) {
         if (error) throw error;
 
-        console.log("Vai lan don dua")
-        var minYear = 2018;
+        const minYear = 2018;
 
-        datapub = data_.filter(d => new Date(d.Time).getFullYear() >= minYear);
+        let datapub = data_.filter(d => new Date(d.Time).getFullYear() >= minYear);
         // preprocess
         datapub.forEach(d => {
             d.Time = new Date(d.Time);
