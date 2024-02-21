@@ -8,10 +8,10 @@ google-ID: 'UA-112060364-1'
 
 menu:
 #- {name: 'Résumé', url: 'docs/HuyenNguyen-Resume.pdf'}
+- {name: 'About',   url: 'about/'}
+- {name: 'Blog', url: 'blog/'}
 - {name: 'CV', url: 'docs/HuyenNguyen-CV.pdf'}
 - {name: 'Teaching', url: 'teaching/'}
-- {name: 'Blog', url: 'blog/'}
-- {name: 'About',   url: 'about/'}
 #- {name: 'Contact', url: 'contact.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer

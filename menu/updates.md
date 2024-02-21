@@ -4,6 +4,12 @@ title: Updates
 permalink: /updates/
 ---
 <div class="row updateSection">
+    <div class="col-sm-3 dateInUpdate"><i>September 2023</i></div>
+    <div class="col-sm-9">I started working as a Postdoctoral Research Fellow at <b>Harvard Medical School</b>!
+    </div>
+</div>
+
+<div class="row updateSection">
 	<div class="col-sm-3 dateInUpdate"><i>August 2023</i></div>
 	<div class="col-sm-9">I graduated with my Ph.D. in Computer Science from Texas Tech University 🎓✨
 	</div>
@@ -18,7 +24,7 @@ permalink: /updates/
 
 <div class="row updateSection">
 	<div class="col-sm-3 dateInUpdate"><i>June 2023</i></div>
-	<div class="col-sm-9">I successfully<b>defended my doctoral dissertation</b> in Computer Science! ✨ My
+	<div class="col-sm-9">I successfully <b>defended my doctoral dissertation</b> in Computer Science! ✨ My
 		dissertation is titled "Interactive Visualization and Event Detection in Time-series Data."
 	</div>
 </div>
