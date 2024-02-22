@@ -5,4 +5,4 @@ Usage:
 - after all the manoeuvering, enable `url` before building the page
 - copy the content of `_site` to hosting folder
 
-
+DO NOT `unpublish` this site! It'll disable GitHub Pages on other repo deployments.
